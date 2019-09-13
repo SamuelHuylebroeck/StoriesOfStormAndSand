@@ -1,11 +1,7 @@
 /// @description Create the grid
 // You can write your code in this editor
-var left = 48;
-var top = 112;
-var h_cells = 17;
-var v_cells = 7;
-var cell_width = 32;
-var cell_height = 32;
 
-global.map_grid = mp_grid_create(left,top,h_cells,v_cells,cell_width,cell_height);
+global.map_grid = mp_grid_create(global.grid_left_startpos,global.grid_top_startpos,
+					global.grid_nr_h_cells, global.grid_nr_v_cells,
+					global.grid_cell_width,global.grid_cell_height);
 global.navigate = path_add();
