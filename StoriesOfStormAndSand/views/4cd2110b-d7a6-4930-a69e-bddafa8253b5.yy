@@ -6,7 +6,8 @@
     "children": [
         "ae02612d-9134-4a56-bb46-91c6efb1ef32",
         "2a58525f-fd54-4820-b88b-e93bbcc2ff8d",
-        "84baa656-097e-4488-8c4a-d616dcd5b649"
+        "84baa656-097e-4488-8c4a-d616dcd5b649",
+        "34ee9f13-fcd9-4fa8-9178-6029eabac29c"
     ],
     "filterType": "GMScript",
     "folderName": "pathing",
