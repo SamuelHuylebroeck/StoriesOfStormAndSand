@@ -34,10 +34,10 @@ if(global.selected != noone && mouse_check_button_pressed(mb_right))
 	}else if(instance_position(mouse_x,mouse_y,obj_move_attack))
 	{
 		global.attacking = true;
+		global.target = instance_nearest(mouse_x,mouse_y,par_enemy);
 		with(global.selected){
 			//Check if we are already close enough to attack
-			if(distance_to_object(obj_move_attack) > global.grid_cell_width/2-5){
-				//TODO: Figure out correct magic number
+			if(distance_to_object(obj_move_attack) > global.grid_cell_width/2-5){	//TODO: Figure out correct magic number
 				global.moving = true;
 				show_debug_message("mouse at: "+ string(mouse_x)+", "+ string(mouse_y));
 				var nearest_attack_square = instance_nearest(mouse_x, mouse_y, obj_move_attack);
@@ -66,7 +66,7 @@ if(global.moving)
 			cur_node_y = y;
 			sprite_index = anim_idle;
 			global.moving = false;
-			if(move_points_pixels_curr >= global.grid_cell_width){
+			if(move_points_pixels_curr >= global.grid_cell_width && !global.attacking){
 				scr_draw_possible_moves_selected();
 			}
 		}
