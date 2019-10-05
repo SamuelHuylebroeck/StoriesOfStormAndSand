@@ -4,7 +4,7 @@ var healthbar_distance_above_unit = 16;
 var healthbar_height = 2;
 var healthbar_x_offset = 2;
 var healthbar_y_offset = 2;
-var healthbar_width = 28;
+var healthbar_width = 60;
 var fill_color = c_green;
 
 //Calculated values

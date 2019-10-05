@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_sand",
     "eventList": [
-        
+        {
+            "id": "39cea073-6f67-4b68-87ec-079e48cb8e4a",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "abe2fbd6-9dde-4fda-ae8e-0f39a3bf8b00"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
