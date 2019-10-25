@@ -2,7 +2,7 @@
 Turn based strategy game coded as a learning experience in gamemaker studio 2.
 
 ## Known Issues
--
+- camera edge-guarding not complete
 
 ## Improvements
 - Only draw pathing visualization around selected unit instead of on the whole map
@@ -14,18 +14,19 @@ Initial game mechanics
 - unit selection and view
 
 ### Mechanics track
-- ranged attacks
-- AI turn
 - GUI: display stats of selected unit
 - GUI: display stats of target
+- Updated combat mechanics
+- AI turn
 
 ### Graphics track
-- Spearman stick figure sprite with idle, walking, stabbing and death animation
+- Bolt Knight finished animations (idle, move lrud, attack jab, attack blast, death)
 - update terrain graphics to 64-bit
 
 
 ## Planned
 - 2 Factions
+- 4 units per faction
 - Faction Mechanics
 - Fire emblem style combat triangle
 - 3 maps

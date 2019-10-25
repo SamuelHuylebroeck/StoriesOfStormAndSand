@@ -18,7 +18,7 @@ move_points_pixels_curr = move_points_pixels;
 cur_node_x = x;
 cur_node_y = y;
 
-anim_idle = spr_speardude_idle_rdy;
-anim_run = spr_speardude_walking_left;
-anim_melee = spr_speardude_stabbing;
+anim_idle = spr_bolt_knight_idle_placeholder;
+anim_run = spr_bolt_knight_move_right;
+anim_melee = spr_bolt_knight_attack_jab_placeholder;
 anim_death = spr_speardude_death;
