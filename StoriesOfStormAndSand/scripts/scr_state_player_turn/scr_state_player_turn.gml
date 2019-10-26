@@ -1,12 +1,15 @@
 ////scr_player_turn
 if(instance_position(mouse_x, mouse_y,par_player) && mouse_check_button_pressed(mb_left))
 {
-	var player;
-	player = instance_nearest(mouse_x,mouse_y,par_player);
+	var player_unit;
+	player_unit = instance_nearest(mouse_x,mouse_y,par_player);
 	
-	if(player.id != global.selected){
-		global.selected=player;
+	if(player_unit.id != global.selected){
+		global.selected=player_unit;
 		scr_possible_moves_clean();
+		//Create unit stats view
+		var gui_unit_stats = instance_create_layer(0,0,"Gui", obj_gui_unit_stats);
+		gui_unit_stats.unit = global.selected;
 	}
 	
 	if(!move_grid_drawn){ 
@@ -54,6 +57,7 @@ if(global.selected != noone && mouse_check_button_pressed(mb_right))
 	}else if(instance_position(mouse_x,mouse_y, obj_move_impossible)){
 		global.selected = noone;
 		scr_possible_moves_clean();
+		scr_gui_unit_stats_clean();
 	}
 }
 if(global.moving)

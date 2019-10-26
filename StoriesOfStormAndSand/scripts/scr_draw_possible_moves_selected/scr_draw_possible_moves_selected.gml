@@ -1,8 +1,10 @@
 mp_grid_clear_all(global.map_grid);
 
 with(par_player){
-	if(self.id != global.selected.id){
-		mp_grid_add_instances(global.map_grid,self,false);
+	if(global.selected != noone){
+		if(self.id != global.selected.id){
+			mp_grid_add_instances(global.map_grid,self,false);
+		}
 	}
 }
 

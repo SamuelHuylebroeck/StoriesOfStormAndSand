@@ -25,3 +25,12 @@ global.left = azerty?"Q":"A";
 global.down = "S";
 global.right = "D";
 
+//Stat enum
+enum combat_type
+{
+	brutal,
+	swift,
+	stalwart
+};
+
+
