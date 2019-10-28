@@ -9,8 +9,8 @@
 ///@param {color} color of the bar portion not filled by current_value
 ///@param {int} blend_length length of the blended part of the bar in pixels
 
-var current_pos_x = argument0;
-var current_pos_y = argument1;
+var pos_x = argument0;
+var pos_y = argument1;
 var length = argument2;
 var current_value = argument3;
 var current_color = argument4;
@@ -28,24 +28,23 @@ draw_set_circle_precision(12);
 
 //Background
 //draw corners
-draw_sprite(spr_horizontal_gauge_l,0,current_pos_x,current_pos_y);
-draw_sprite(spr_horizontal_gauge_r,0,current_pos_x + (length-1) * component_length,current_pos_y);
+draw_sprite(spr_horizontal_gauge_l,0,pos_x,pos_y);
+draw_sprite(spr_horizontal_gauge_r,0,pos_x + (length-1) * component_length,pos_y);
 //draw middle
 for(i =1; i<length-1;i++)
 {
-	draw_sprite(spr_horizontal_gauge_m,0,current_pos_x + (i) * component_length,current_pos_y);
+	draw_sprite(spr_horizontal_gauge_m,0,pos_x + (i) * component_length,pos_y);
 }
 //Internal bar
 //draw coloured in bar
 var percentage = current_value/max_value;
-show_debug_message(string(percentage));
 var total_fill_bar_length = length*component_length - 2*internal_margin_x;
 var old_color = draw_get_color();
 //left part
 draw_set_color(current_color);
 //edge eclipse
-var x1 = current_pos_x + internal_margin_x;
-var y1 = current_pos_y + internal_margin_y;
+var x1 = pos_x + internal_margin_x;
+var y1 = pos_y + internal_margin_y;
 var x2 = x1 + ellipse_box_width;
 var y2 = y1 + internal_height;
 draw_ellipse(x1,y1,x2,y2,false);
@@ -58,7 +57,7 @@ draw_rectangle(x1,y1,x2,y2,false);
 //middle blend
 x1 = x2;
 x2 += blend_length;
-draw_rectangle_color(x1,y1,x2,y2,current_color,current_color,max_color,current_color,false);
+draw_rectangle_color(x1,y1,x2,y2,current_color,max_color,max_color,current_color,false);
 //right color
 draw_set_color(max_color);
 x1 = x2;

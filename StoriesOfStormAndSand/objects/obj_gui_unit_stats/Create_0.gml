@@ -3,11 +3,8 @@
 unit = noone;
 
 //config
-min_width = 3;
-min_height =3 ;
-
-current_width = 4;
-current_height = 6;
+current_width = 5;
+current_height = 8;
 
 component_width = 64;
 component_height = 64;
@@ -23,5 +20,7 @@ internal_offset_y = 3;
 
 text_font = font_stats_bahn;
 text_color = make_color_hsv(46,74,255);
+text_stat_color_normal = c_green;
+text_stat_color_weak = c_red;
 text_font_size = 8;
 

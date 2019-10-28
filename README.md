@@ -3,6 +3,7 @@ Turn based strategy game coded as a learning experience in gamemaker studio 2.
 
 ## Known Issues
 - camera edge-guarding not complete
+- coloured bar creation edge case: min value is 0 or min is same as max
 
 ## Improvements
 - Only draw pathing visualization around selected unit instead of on the whole map

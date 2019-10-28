@@ -6,13 +6,21 @@
 stats_name = "Bolt Knight";
 stats_move_points_sqr  = 7;
 stats_max_hp = 50;
+stats_type = combat_type.swift;
+stats_armor_normal = 10;
+stats_armor_weak = 3;
+stats_evade_normal = 25;
+stats_evade_weak = 10;
+
+//Attack stats
+//Attack one
+//Attack two
+
+//old stats
 stats_might = 50;
 stats_hit_rate = 100;
 stats_evade = 80;
 stats_defence = 3;
-stats_type = combat_type.swift;
-
-//Attacks
 
 //Derived stats
 stats_current_hp = stats_max_hp-10;
