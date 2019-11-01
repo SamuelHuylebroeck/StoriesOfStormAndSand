@@ -11,10 +11,28 @@ stats_armor_normal = 10;
 stats_armor_weak = 3;
 stats_evade_normal = 25;
 stats_evade_weak = 10;
+stats_spike_normal  = 5;
+stats_spike_weak = 2;
 
 //Attack stats
 //Attack one
+attack_one[attack_fields.name] = "Lightning Jab"
+attack_one[attack_fields.range_min] = 1 ;
+attack_one[attack_fields.range_max] = 1;
+attack_one[attack_fields.type] = combat_type.swift;
+attack_one[attack_fields.strength_weak] = 5;
+attack_one[attack_fields.strength_normal] = 15;
+attack_one[attack_fields.hit_normal] = 120;
+attack_one[attack_fields.hit_weak] = 90;
 //Attack two
+attack_two[attack_fields.name] = "Lightning Blast"
+attack_two[attack_fields.range_min] = 2;
+attack_two[attack_fields.range_max] = 3;
+attack_two[attack_fields.type] = combat_type.brutal;
+attack_two[attack_fields.strength_weak] = 10;
+attack_two[attack_fields.strength_normal] = 20;
+attack_two[attack_fields.hit_normal] = 100;
+attack_two[attack_fields.hit_weak] = 70;
 
 //old stats
 stats_might = 50;

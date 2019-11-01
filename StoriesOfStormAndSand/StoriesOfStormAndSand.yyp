@@ -375,6 +375,14 @@
             }
         },
         {
+            "Key": "4be2cd8a-6b8e-4cfe-a2a5-6f7e54daf47a",
+            "Value": {
+                "id": "5a091434-78a7-4908-a351-29f06ba71d59",
+                "resourcePath": "scripts\\scr_gui_create_range_string\\scr_gui_create_range_string.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4c957745-3674-4838-b11d-077ae892b504",
             "Value": {
                 "id": "848441cd-9ae3-404b-885a-f1d65e04b895",
@@ -1185,7 +1193,8 @@
         "8181e40f-8f2a-4da2-842f-717b92e2fb2a",
         "7ccc53e3-c4c2-44f5-915a-b671fd2a5d41",
         "172bf1b6-43ca-4987-9c8b-14310c96090f",
-        "659692b1-4c70-49f7-9ece-f4e1013e227c"
+        "659692b1-4c70-49f7-9ece-f4e1013e227c",
+        "4be2cd8a-6b8e-4cfe-a2a5-6f7e54daf47a"
     ],
     "tutorial": ""
 }

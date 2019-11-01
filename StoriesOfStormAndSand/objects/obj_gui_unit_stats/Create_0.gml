@@ -4,7 +4,7 @@ unit = noone;
 
 //config
 current_width = 5;
-current_height = 8;
+current_height = 7;
 
 component_width = 64;
 component_height = 64;
@@ -20,7 +20,8 @@ internal_offset_y = 3;
 
 text_font = font_stats_bahn;
 text_color = make_color_hsv(46,74,255);
-text_stat_color_normal = c_green;
-text_stat_color_weak = c_red;
-text_font_size = 8;
+health_color_healthy = c_green;
+health_color_missing= c_red;
+text_stat_color_normal = make_color_hsv(142,211,222);
+text_stat_color_weak = c_yellow;
 

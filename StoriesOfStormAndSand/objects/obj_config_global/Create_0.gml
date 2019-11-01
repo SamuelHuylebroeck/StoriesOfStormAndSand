@@ -33,4 +33,16 @@ enum combat_type
 	stalwart
 };
 
+enum attack_fields
+{
+	name,
+	type,
+	range_min,
+	range_max,
+	strength_weak,
+	strength_normal,
+	hit_normal,
+	hit_weak
+};
+
 
