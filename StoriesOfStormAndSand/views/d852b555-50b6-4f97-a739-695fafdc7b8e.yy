@@ -10,7 +10,8 @@
         "f77a8d6a-fa8f-4f7d-9902-67732476576f",
         "07026341-f8e4-4f63-9bb7-a4f28d55eb65",
         "5f9bf95a-cb60-493a-8e7e-d56bd3dd6086",
-        "4a897cf8-3e80-4992-b046-4307824ad489"
+        "4a897cf8-3e80-4992-b046-4307824ad489",
+        "47695c51-a5e2-4810-9608-76d63c4ca6ce"
     ],
     "filterType": "GMObject",
     "folderName": "control",

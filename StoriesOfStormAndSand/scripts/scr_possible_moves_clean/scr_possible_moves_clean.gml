@@ -1,13 +1,21 @@
-with(obj_move_possible){
+with(obj_move_possible)
+{
 	instance_destroy();
 }
-with(obj_move_impossible){
+with(obj_move_impossible)
+{
 	instance_destroy();
 }
-with(obj_move_attack){
+with(obj_move_target)
+{
 	instance_destroy();
 }
-with(obj_move_curr_selected){
+with(obj_move_curr_selected)
+{
+	instance_destroy();
+}
+with(obj_attack_init)
+{
 	instance_destroy();
 }
 move_grid_drawn = false;

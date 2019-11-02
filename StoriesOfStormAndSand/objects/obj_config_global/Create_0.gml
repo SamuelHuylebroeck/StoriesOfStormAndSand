@@ -18,12 +18,18 @@ global.busy_percentage = 20;
 //Debug globals
 global.debug_draw_grid = false;
 
+//Combat stats globals
+global.attack_max_range = 4;
+
 //Querty Azerty stuff
 azerty = true;
 global.up = azerty?"Z":"W";
 global.left = azerty?"Q":"A";
 global.down = "S";
 global.right = "D";
+
+//camera control
+global.camera_controllable = true;
 
 //Stat enum
 enum combat_type
@@ -42,7 +48,19 @@ enum attack_fields
 	strength_weak,
 	strength_normal,
 	hit_normal,
-	hit_weak
+	hit_weak,
+	animation
 };
 
+enum unit_animation_fields
+{
+	idle,
+	move_left,
+	move_right,
+	move_up,
+	move_down,
+	defender,
+	dodge,
+	death
+}
 

@@ -1,5 +1,5 @@
 {
-    "id": "10620872-4929-420f-9cfd-cf51ae310704",
+    "id": "84cbed1e-82b2-4e29-8f9b-d2ac7f3bd7e1",
     "modelName": "GMSprite",
     "mvc": "1.12",
     "name": "spr_move_attack",
@@ -16,37 +16,37 @@
     "edgeFiltering": false,
     "frames": [
         {
-            "id": "f1258376-edbb-4436-b6a6-861c7292a685",
+            "id": "69bbfb56-aaf1-4a5f-af71-9d88b9b92043",
             "modelName": "GMSpriteFrame",
             "mvc": "1.0",
-            "SpriteId": "10620872-4929-420f-9cfd-cf51ae310704",
+            "SpriteId": "84cbed1e-82b2-4e29-8f9b-d2ac7f3bd7e1",
             "compositeImage": {
-                "id": "7a3b55b3-9b27-4119-8501-203693f9db72",
+                "id": "88777f80-a78f-4e23-a9cb-c29ff741c42b",
                 "modelName": "GMSpriteImage",
                 "mvc": "1.0",
-                "FrameId": "f1258376-edbb-4436-b6a6-861c7292a685",
+                "FrameId": "69bbfb56-aaf1-4a5f-af71-9d88b9b92043",
                 "LayerId": "00000000-0000-0000-0000-000000000000"
             },
             "images": [
                 {
-                    "id": "fbc5cca9-2ff9-4a23-9bcf-98cb1601bc3c",
+                    "id": "8fcbbdf7-9e69-4f4d-837b-949cb2a3c44d",
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
-                    "FrameId": "f1258376-edbb-4436-b6a6-861c7292a685",
-                    "LayerId": "97988de4-af3b-40e3-a8d9-e29ada57e513"
+                    "FrameId": "69bbfb56-aaf1-4a5f-af71-9d88b9b92043",
+                    "LayerId": "d6e5e374-7664-45cf-a655-f91817ddb0c4"
                 }
             ]
         }
     ],
-    "gridX": 0,
-    "gridY": 0,
+    "gridX": 8,
+    "gridY": 8,
     "height": 64,
     "layers": [
         {
-            "id": "97988de4-af3b-40e3-a8d9-e29ada57e513",
+            "id": "d6e5e374-7664-45cf-a655-f91817ddb0c4",
             "modelName": "GMImageLayer",
             "mvc": "1.0",
-            "SpriteId": "10620872-4929-420f-9cfd-cf51ae310704",
+            "SpriteId": "84cbed1e-82b2-4e29-8f9b-d2ac7f3bd7e1",
             "blendMode": 0,
             "isLocked": false,
             "name": "default",

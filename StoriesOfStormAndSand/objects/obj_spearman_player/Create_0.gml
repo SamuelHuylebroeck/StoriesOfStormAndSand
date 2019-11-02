@@ -18,6 +18,8 @@ move_points_pixels_curr = move_points_pixels;
 cur_node_x = x;
 cur_node_y = y;
 
+animations[unit_animation_fields.defender] = 
+
 anim_idle = spr_spearman_player_left_pose;
 anim_run = spr_spearman_player_walk_left;
 anim_melee = spr_speardude_stabbing;

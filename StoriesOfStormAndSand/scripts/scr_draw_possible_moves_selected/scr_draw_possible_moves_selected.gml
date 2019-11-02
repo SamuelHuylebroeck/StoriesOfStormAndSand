@@ -13,10 +13,14 @@ with(par_enemy){
 }
 
 //Draw
-for(i=0; i<global.grid_nr_h_cells; i+=1){
-	var i_x = i * global.grid_cell_width + global.grid_left_startpos + global.grid_cell_width/2;
-	for(j=0;j<global.grid_nr_v_cells;j++){
-		var i_y = j* global.grid_cell_height+global.grid_top_startpos + global.grid_cell_height/2;
+var center_x = global.selected.x;
+var center_y = global.selected.y;
+var range = global.selected.stats_move_points_sqr;
+for(i=-range; i<=range; i+=1){
+	var i_x = i * global.grid_cell_width + center_x;
+	for(j=-range;j<=range;j++){
+		var i_y = j* global.grid_cell_height+center_y;
+		//check for move
 		if(mp_grid_path(global.map_grid,global.navigate,global.selected.cur_node_x,global.selected.cur_node_y, i_x,i_y, global.path_allow_diag)){
 			if (path_get_length(global.navigate) <= global.selected.move_points_pixels_curr){
 				instance_create_layer(i_x,i_y,"Pathing", obj_move_possible);
@@ -24,6 +28,7 @@ for(i=0; i<global.grid_nr_h_cells; i+=1){
 				instance_create_layer(i_x,i_y,"Pathing", obj_move_impossible);
 			}
 		}
+		
 	}
 }
 

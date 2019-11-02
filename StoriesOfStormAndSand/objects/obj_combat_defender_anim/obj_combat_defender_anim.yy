@@ -1,8 +1,8 @@
 {
-    "id": "56388bca-8f36-498e-b399-855f17e0df86",
+    "id": "1500ec54-b1a1-4e55-84c7-08b67415ff76",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_move_attack",
+    "name": "obj_combat_defender_anim",
     "eventList": [
         
     ],
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "10620872-4929-420f-9cfd-cf51ae310704",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }
