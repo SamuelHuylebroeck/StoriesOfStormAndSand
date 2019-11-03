@@ -18,7 +18,10 @@
         "1bf8123f-884b-4e83-97da-9426175fb2a4",
         "ff6f78c6-f5ff-40c3-9826-3c7e8a1cff86",
         "dc6dc0e4-dcbd-4320-a5a1-23cd50acd37c",
-        "e3c14602-60d7-44a6-a2e1-b7270b9a6f1e"
+        "e3c14602-60d7-44a6-a2e1-b7270b9a6f1e",
+        "ce4aa57e-2765-4704-8265-daac27a75388",
+        "ae761518-dfe8-45e1-9459-278fd5faac2d",
+        "44621e73-a6e6-4671-a300-b9a96b98be1d"
     ],
     "filterType": "GMSprite",
     "folderName": "unit stats",

@@ -39,6 +39,12 @@ enum combat_type
 	stalwart
 };
 
+enum combat_relation
+{
+	normal,
+	weak
+};
+
 enum attack_fields
 {
 	name,

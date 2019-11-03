@@ -1,19 +1,10 @@
 {
-    "id": "1500ec54-b1a1-4e55-84c7-08b67415ff76",
+    "id": "21803ca6-b17a-47c0-a081-fd9639d0c995",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_combat_defender_anim",
+    "name": "obj_combat_health_bar",
     "eventList": [
-        {
-            "id": "131e02d1-05b2-46f1-9d23-4168eb4bf89e",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "1500ec54-b1a1-4e55-84c7-08b67415ff76"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

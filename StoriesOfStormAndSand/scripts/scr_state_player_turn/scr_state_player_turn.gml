@@ -55,9 +55,7 @@ if(global.selected != noone && mouse_check_button_pressed(mb_right))
 		scr_possible_moves_clean();
 	//Deselect
 	}else if(instance_position(mouse_x,mouse_y, obj_move_impossible)){
-		global.selected = noone;
-		scr_possible_moves_clean();
-		scr_gui_unit_stats_clean();
+		scr_deselect();
 	}
 }
 if(global.moving)

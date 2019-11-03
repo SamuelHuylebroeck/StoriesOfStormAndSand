@@ -1,14 +1,14 @@
-/// @description Insert description here
+/// @description Clean up components and re-rnzblr camera
 // You can write your code in this editor
-with(obj_combat_attacker_anim)
+for (var i = 0; i< ds_list_size(ds_list_combat_controller_components);i++)
 {
-	instance_destroy();
+	var component = ds_list_combat_controller_components[| i];
+	with(component)
+	{
+		instance_destroy();
+	}
 }
-
-with(obj_combat_defender_anim)
-{
-	instance_destroy();
-}
+ds_list_destroy(ds_list_combat_controller_components);
 
 with(obj_camera)
 {

@@ -16,5 +16,4 @@ var target_y = scr_pixel_y_to_tile_y(target.y);
 var range = sqrt( power(origin_x-target_x, 2) + power(origin_y - target_y,2));
 var outside_min =  range > attack[attack_fields.range_min]-1;
 var inside_max = range <= attack[attack_fields.range_max];
-show_debug_message(attack[attack_fields.name] + " " + string(range) + string(outside_min)+ "," + string(inside_max));
 return  outside_min && inside_max;
