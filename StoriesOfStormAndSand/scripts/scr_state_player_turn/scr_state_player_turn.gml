@@ -80,7 +80,7 @@ if(global.attacking == true)
 	{
 		with(global.selected)
 		{
-			scr_melee_attack();
+			//scr_melee_attack();
 		}
 	} 
 }

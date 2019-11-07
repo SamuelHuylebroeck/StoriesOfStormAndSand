@@ -23,8 +23,43 @@ var component_length = sprite_get_width(spr_horizontal_gauge_l);
 var internal_margin_x = 10; //ignoring sprite curvature for now
 var internal_margin_y = 10;
 var internal_height = 12;
-var ellipse_box_width = 6;
-draw_set_circle_precision(12);
+
+var old_color = draw_get_color();
+//Internal bar
+//draw coloured in bar
+var percentage = current_value/max_value;
+var total_fill_bar_length = length*component_length - 2*internal_margin_x;
+var current_total_length = total_fill_bar_length * percentage;
+
+
+//Max-value underlying layer
+draw_set_color(max_color);
+var x1 = pos_x + internal_margin_x;
+var y1 = pos_y + internal_margin_y;
+var x2 = x1 + total_fill_bar_length;
+var y2 = y1 + internal_height;
+draw_rectangle(x1,y1,x2,y2,false);
+
+//Current-value top layer
+if(current_total_length > 0)
+{
+	draw_set_color(current_color);
+	x2  = x1 + current_total_length;
+	draw_rectangle(x1,y1,x2,y2,false);
+}
+
+//blend-box
+if(blend_length > 0)
+{
+	//cap blend pos 
+	var bar_start_pos = pos_x + internal_margin_x;
+	var bar_end_pos = bar_start_pos + total_fill_bar_length;
+	var curr_end_pos = bar_start_pos + current_total_length;
+	var blend_left_pos = curr_end_pos - blend_length/2 < bar_start_pos ? bar_start_pos : curr_end_pos - blend_length/2;
+	var blend_right_pos = curr_end_pos + blend_length > bar_end_pos ? bar_end_pos : curr_end_pos + blend_length/2;
+	draw_rectangle_color(blend_left_pos , y1, blend_right_pos,y2,current_color,max_color,max_color,current_color,false);
+
+}
 
 //Background
 //draw corners
@@ -35,38 +70,6 @@ for(i =1; i<length-1;i++)
 {
 	draw_sprite(spr_horizontal_gauge_m,0,pos_x + (i) * component_length,pos_y);
 }
-//Internal bar
-//draw coloured in bar
-var percentage = current_value/max_value;
-var total_fill_bar_length = length*component_length - 2*internal_margin_x;
-var old_color = draw_get_color();
-//left part
-draw_set_color(current_color);
-//edge eclipse
-var x1 = pos_x + internal_margin_x;
-var y1 = pos_y + internal_margin_y;
-var x2 = x1 + ellipse_box_width;
-var y2 = y1 + internal_height;
-draw_ellipse(x1,y1,x2,y2,false);
-
-//normal rectangle
-var bar_length = percentage * total_fill_bar_length - blend_length/2 - ellipse_box_width/2;
-x1 += ellipse_box_width/2;
-x2 = x1 + bar_length;
-draw_rectangle(x1,y1,x2,y2,false);
-//middle blend
-x1 = x2;
-x2 += blend_length;
-draw_rectangle_color(x1,y1,x2,y2,current_color,max_color,max_color,current_color,false);
-//right color
-draw_set_color(max_color);
-x1 = x2;
-bar_length = (1-percentage) * total_fill_bar_length - blend_length/2 - ellipse_box_width/2;
-x2 += bar_length
-draw_rectangle(x1,y1,x2,y2,false);
-x1=x2-ellipse_box_width/2;
-x2+= ellipse_box_width/2;
-draw_ellipse(x1,y1,x2,y2,false);
 
 draw_set_color(old_color);
 

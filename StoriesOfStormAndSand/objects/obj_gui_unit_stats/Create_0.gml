@@ -19,7 +19,7 @@ internal_offset_x = 3;
 internal_offset_y = 3;
 
 blend_length = 16;
-health_blend_length = 0;
+health_blend_length = 10;
 
 text_font = font_stats_bahn;
 text_color = make_color_hsv(46,74,255);

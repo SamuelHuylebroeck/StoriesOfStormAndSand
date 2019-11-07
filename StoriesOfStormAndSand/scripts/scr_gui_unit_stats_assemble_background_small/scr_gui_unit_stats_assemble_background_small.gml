@@ -19,7 +19,7 @@ draw_sprite(spr_gui_us_small_l, 0, current_tlc_x,current_tlc_y);
 draw_sprite(spr_gui_us_small_r, 0, current_tlc_x + (width-1) * component_width ,current_tlc_y);
 
 //Draw middle
-for(var i =1; i< width -1;i++)
+for(var i =1; i< width-1;i++)
 {
-	draw_sprite(spr_gui_us_m, 0, current_tlc_x + i * component_width, current_tlc_y);
+	draw_sprite(spr_gui_us_small_m, 0, current_tlc_x + i * component_width, current_tlc_y);
 }

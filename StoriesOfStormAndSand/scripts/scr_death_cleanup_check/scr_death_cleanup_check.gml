@@ -1,4 +1,8 @@
-if(sprite_index = anim_death && image_index > image_number -1)
+if(stats_current_hp <= 0 && !global.combat_animation_playing)
 {
-	instance_destroy();
+	image_alpha -= global.unit_fade_step;
+	if(image_alpha <=0)
+	{
+		instance_destroy();
+	}
 }

@@ -10,7 +10,7 @@ stats_armor_normal = 10;
 stats_armor_weak = 3;
 stats_evade_normal = 25;
 stats_evade_weak = 10;
-stats_spike_normal  = 5;
+stats_spike_normal  = 20;
 stats_spike_weak = 2;
 
 //Attack stats
@@ -37,6 +37,10 @@ attack_two[attack_fields.hit_normal] = 100;
 attack_two[attack_fields.hit_weak] = 70;
 attack_two[attack_fields.animation] = spr_bolt_knight_attack_blast_placeholder;
 ds_list_add(ds_attack_list,attack_two);
+
+animations[unit_animation_fields.defender] = spr_bolt_knight_defender_placehoder;
+animations[unit_animation_fields.death_attacker] = spr_bolt_knight_death_attacker;
+animations[unit_animation_fields.death_defender] = spr_bolt_knight_death_defender;
 
 //old stats
 stats_might = 50;
@@ -67,8 +71,6 @@ move_points_pixels_curr = move_points_pixels;
 
 cur_node_x = x;
 cur_node_y = y;
-
-animations[unit_animation_fields.defender] = spr_bolt_knight_defender_placehoder;
 
 anim_idle = spr_speardude_idle_rdy_enemy;
 anim_run = spr_speardude_walking_left;

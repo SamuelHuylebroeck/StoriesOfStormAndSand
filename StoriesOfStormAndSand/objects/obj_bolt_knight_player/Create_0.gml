@@ -7,9 +7,9 @@ stats_move_points_sqr  = 7;
 stats_max_hp = 50;
 stats_type = combat_type.swift;
 stats_armor_normal = 10;
-stats_armor_weak = 3;
+stats_armor_weak = 10;
 stats_evade_normal = 25;
-stats_evade_weak = 10;
+stats_evade_weak = 0;
 stats_spike_normal  = 5;
 stats_spike_weak = 2;
 
@@ -22,9 +22,10 @@ attack_one[attack_fields.range_max] = 1;
 attack_one[attack_fields.type] = combat_type.swift;
 attack_one[attack_fields.strength_weak] = 5;
 attack_one[attack_fields.strength_normal] = 15;
-attack_one[attack_fields.hit_normal] = 120;
-attack_one[attack_fields.hit_weak] = 90;
+attack_one[attack_fields.hit_normal] = 50;
+attack_one[attack_fields.hit_weak] = 30;
 attack_one[attack_fields.animation] = spr_bolt_knight_attack_jab_placeholder;
+attack_one[attack_fields.animation_hit_frame] = 6;
 ds_list_add(ds_attack_list,attack_one);
 //Attack two
 attack_two[attack_fields.name] = "Lightning Blast"
@@ -36,6 +37,7 @@ attack_two[attack_fields.strength_normal] = 20;
 attack_two[attack_fields.hit_normal] = 100;
 attack_two[attack_fields.hit_weak] = 70;
 attack_two[attack_fields.animation] = spr_bolt_knight_attack_blast_placeholder;
+attack_two[attack_fields.animation_hit_frame] = 14;
 ds_list_add(ds_attack_list,attack_two);
 
 //old stats
@@ -45,7 +47,7 @@ stats_evade = 80;
 stats_defence = 3;
 
 //Derived stats
-stats_current_hp = stats_max_hp;
+stats_current_hp = stats_max_hp-2;
 move_points_pixels = stats_move_points_sqr * global.grid_cell_width;
 move_points_pixels_curr = move_points_pixels;
 
@@ -54,6 +56,9 @@ cur_node_y = y;
 
 //Sprites and animation
 animations[unit_animation_fields.defender] = spr_bolt_knight_defender_placehoder;
+animations[unit_animation_fields.death_attacker] = spr_bolt_knight_death_attacker;
+animations[unit_animation_fields.death_defender] = spr_bolt_knight_death_defender;
+animations[unit_animation_fields.idle] = spr_bolt_knight_idle_placeholder;
 
 spr_portrait = spr_bolt_knight_portrait;
 anim_idle = spr_bolt_knight_idle_placeholder;

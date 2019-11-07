@@ -7,5 +7,6 @@ global.moving = false;
 global.attacking = false;
 global.attack_travel_x = 0;
 global.attack_travel_y = 0;
+global.combat_animation_playing = false;
 
 move_grid_drawn = false;

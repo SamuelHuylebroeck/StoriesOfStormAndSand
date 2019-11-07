@@ -31,6 +31,9 @@ global.right = "D";
 //camera control
 global.camera_controllable = true;
 
+//animation globals
+global.unit_fade_step = 1/(room_speed);
+
 //Stat enum
 enum combat_type
 {
@@ -55,7 +58,8 @@ enum attack_fields
 	strength_normal,
 	hit_normal,
 	hit_weak,
-	animation
+	animation,
+	animation_hit_frame
 };
 
 enum unit_animation_fields
@@ -67,6 +71,7 @@ enum unit_animation_fields
 	move_down,
 	defender,
 	dodge,
-	death
+	death_attacker,
+	death_defender
 }
 
