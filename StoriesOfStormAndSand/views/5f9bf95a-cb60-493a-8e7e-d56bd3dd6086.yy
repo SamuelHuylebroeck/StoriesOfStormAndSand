@@ -8,7 +8,8 @@
         "973b26c7-bc90-4cf0-8611-0b63f12a3dbe",
         "daacbdd3-7123-4f46-8596-a187b8115562",
         "56388bca-8f36-498e-b399-855f17e0df86",
-        "23f4c4dc-fade-480b-910b-8ff59224e347"
+        "23f4c4dc-fade-480b-910b-8ff59224e347",
+        "e9b6aedc-6779-4984-9fda-746b828fd371"
     ],
     "filterType": "GMObject",
     "folderName": "pathing",

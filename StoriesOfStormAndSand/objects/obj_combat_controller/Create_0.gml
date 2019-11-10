@@ -3,13 +3,13 @@
 
 //Config
 //background
-width =11;
+width = 11;
 height = 5;
 component_width = sprite_get_width(spr_gui_us_tlc);
 component_height = sprite_get_height(spr_gui_us_tlc);
 //platforms
 platforms_offset_melee_x = 1*component_width;
-platforms_offset_ranged_x = 2*component_width;
+platforms_offset_ranged_x = 1.5*component_width;
 platforms_offset_y = 0.5*component_height;
 //animation
 animation_start_delay = room_speed * 0.5;;

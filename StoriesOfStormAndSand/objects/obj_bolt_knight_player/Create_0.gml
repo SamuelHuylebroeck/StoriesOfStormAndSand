@@ -54,6 +54,8 @@ move_points_pixels_curr = move_points_pixels;
 cur_node_x = x;
 cur_node_y = y;
 
+has_acted_this_round = false;
+
 //Sprites and animation
 animations[unit_animation_fields.defender] = spr_bolt_knight_defender_placehoder;
 animations[unit_animation_fields.death_attacker] = spr_bolt_knight_death_attacker;

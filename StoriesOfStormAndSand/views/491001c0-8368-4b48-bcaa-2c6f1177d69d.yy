@@ -11,7 +11,8 @@
         "30d337c6-e3b5-4eba-8084-b903a97f1348",
         "b3d03d4b-262a-4ab5-ba26-ed0a58a33f09",
         "1a1bf99b-9037-4fe2-b3fc-92f3f46f2ed1",
-        "22f51b27-6948-4058-8a2a-0352dc5fafba"
+        "22f51b27-6948-4058-8a2a-0352dc5fafba",
+        "aac3b909-41f9-4212-8aa0-eef37121302e"
     ],
     "filterType": "GMSprite",
     "folderName": "bolt_knight",

@@ -12,7 +12,7 @@ if(instance_position(mouse_x, mouse_y,par_player) && mouse_check_button_pressed(
 		gui_unit_stats.unit = global.selected;
 	}
 	
-	if(!move_grid_drawn){ 
+	if(!move_grid_drawn && !global.selected.has_acted_this_round){ 
 		scr_draw_possible_moves_selected();
 	}
 }
@@ -66,9 +66,9 @@ if(global.moving)
 		{
 			cur_node_x = x;
 			cur_node_y = y;
-			sprite_index = anim_idle;
+			sprite_index = animations[unit_animation_fields.idle];
 			global.moving = false;
-			if(move_points_pixels_curr >= global.grid_cell_width && !global.attacking){
+			if(move_points_pixels_curr >= global.grid_cell_width && !global.attacking && !has_acted_this_round){
 				scr_draw_possible_moves_selected();
 			}
 		}
