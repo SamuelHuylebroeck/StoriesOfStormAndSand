@@ -1,0 +1,1 @@
+return global.side_map[global.state].assigned_parent;

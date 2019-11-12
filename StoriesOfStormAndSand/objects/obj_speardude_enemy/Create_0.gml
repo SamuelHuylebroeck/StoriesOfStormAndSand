@@ -25,6 +25,7 @@ attack_one[attack_fields.strength_normal] = 15;
 attack_one[attack_fields.hit_normal] = 120;
 attack_one[attack_fields.hit_weak] = 90;
 attack_one[attack_fields.animation] = spr_bolt_knight_attack_jab_placeholder;
+attack_one[attack_fields.animation_hit_frame] = 6;
 ds_list_add(ds_attack_list,attack_one);
 //Attack two
 attack_two[attack_fields.name] = "Lightning Blast"
@@ -36,6 +37,7 @@ attack_two[attack_fields.strength_normal] = 20;
 attack_two[attack_fields.hit_normal] = 100;
 attack_two[attack_fields.hit_weak] = 70;
 attack_two[attack_fields.animation] = spr_bolt_knight_attack_blast_placeholder;
+attack_two[attack_fields.animation_hit_frame] = 14;
 ds_list_add(ds_attack_list,attack_two);
 
 animations[unit_animation_fields.defender] = spr_bolt_knight_defender_placehoder;
@@ -56,6 +58,8 @@ move_points_pixels_curr = move_points_pixels;
 cur_node_x = x;
 cur_node_y = y;
 
+has_acted_this_round = false;
+
 //Configurable stats
 stats_move_points_sqr  = 4;
 stats_max_hp = 50;
@@ -71,6 +75,14 @@ move_points_pixels_curr = move_points_pixels;
 
 cur_node_x = x;
 cur_node_y = y;
+
+animations[unit_animation_fields.defender] = spr_bolt_knight_defender_placehoder;
+animations[unit_animation_fields.death_attacker] = spr_bolt_knight_death_attacker;
+animations[unit_animation_fields.death_defender] = spr_bolt_knight_death_defender;
+animations[unit_animation_fields.idle] = spr_bolt_knight_idle_placeholder;
+
+
+spr_portrait = spr_bolt_knight_portrait;
 
 anim_idle = spr_speardude_idle_rdy_enemy;
 anim_run = spr_speardude_walking_left;

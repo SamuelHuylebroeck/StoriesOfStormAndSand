@@ -1,6 +1,6 @@
 mp_grid_clear_all(global.map_grid);
-
-with(par_player){
+var par_curr_player =scr_get_active_side_par();
+with(par_curr_player){
 	if(global.selected != noone){
 		if(self.id != global.selected.id){
 			mp_grid_add_instances(global.map_grid,self,false);
@@ -8,6 +8,7 @@ with(par_player){
 	}
 }
 
+var par_enemy = scr_get_enemy_side_par();
 with(par_enemy){
 	mp_grid_add_instances(global.map_grid,self,false);
 }

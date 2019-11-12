@@ -1,7 +1,13 @@
 
 if(attacker != noone and defender != noone and attack != noone)
 {
+	//hide gui elements
+	with(obj_control)
+	{
+		scr_hide_gui_elements();
+	}
 	global.combat_animation_playing = true;
+	
 	// Create attacker and defender controller and assign them their sprites
 	var offset_x = 0;
 

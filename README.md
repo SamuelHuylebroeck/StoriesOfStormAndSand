@@ -3,10 +3,9 @@ Turn based strategy game coded as a learning experience in gamemaker studio 2.
 
 ## Known Issues
 - camera edge-guarding not complete
-- coloured bar creation edge case: min value is 0 or min is same as max
+- attack init icon is not deleted when it overlaps with attacker sprite
 
 ## Improvements
-- Only draw pathing visualization around selected unit instead of on the whole map
 
 ## Focus
 Initial game mechanics
@@ -15,14 +14,14 @@ Initial game mechanics
 - unit selection and view
 
 ### Mechanics track
-- GUI: display stats of selected unit
-- GUI: display stats of target
-- Updated combat mechanics
+- First map
+- Game start flow
 - AI turn
 
 ### Graphics track
 - Bolt Knight finished animations (idle, move lrud, attack jab, attack blast, death)
 - update terrain graphics to 64-bit
+- Fire brawler placeholder animations
 
 
 ## Planned

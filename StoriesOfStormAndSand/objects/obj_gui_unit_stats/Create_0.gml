@@ -1,5 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
+//register with controller
+var gui_element = self;
+with(obj_control)
+{
+	ds_list_add(ds_gui_elements, gui_element);
+}
+
 unit = noone;
 
 //config
