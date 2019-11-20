@@ -24,8 +24,8 @@ attack_one[attack_fields.strength_weak] = 5;
 attack_one[attack_fields.strength_normal] = 15;
 attack_one[attack_fields.hit_normal] = 50;
 attack_one[attack_fields.hit_weak] = 30;
-attack_one[attack_fields.animation] = spr_bolt_knight_attack_jab_placeholder;
-attack_one[attack_fields.animation_hit_frame] = 6;
+attack_one[attack_fields.animation] = spr_bolt_knight_attack_jab;
+attack_one[attack_fields.animation_hit_frame] = 7;
 ds_list_add(ds_attack_list,attack_one);
 //Attack two
 attack_two[attack_fields.name] = "Lightning Blast"
@@ -47,7 +47,7 @@ stats_evade = 80;
 stats_defence = 3;
 
 //Derived stats
-stats_current_hp = stats_max_hp-2;
+stats_current_hp = stats_max_hp;
 move_points_pixels = stats_move_points_sqr * global.grid_cell_width;
 move_points_pixels_curr = move_points_pixels;
 
@@ -55,15 +55,20 @@ cur_node_x = x;
 cur_node_y = y;
 
 has_acted_this_round = false;
+is_moving = false;
 
 //Sprites and animation
 animations[unit_animation_fields.defender] = spr_bolt_knight_defender_placehoder;
 animations[unit_animation_fields.death_attacker] = spr_bolt_knight_death_attacker;
 animations[unit_animation_fields.death_defender] = spr_bolt_knight_death_defender;
-animations[unit_animation_fields.idle] = spr_bolt_knight_idle_placeholder;
+animations[unit_animation_fields.idle] = spr_bolt_knight_idle;
+animations[unit_animation_fields.move_ltr] = spr_bolt_knight_walk_ltr_placeholder;
+animations[unit_animation_fields.move_rtl] = spr_bolt_knight_walk_rtl_placeholder;
+animations[unit_animation_fields.move_ttb] = spr_bolt_knight_move_right;
+animations[unit_animation_fields.move_btt] = spr_bolt_knight_move_right;
 
 spr_portrait = spr_bolt_knight_portrait;
-anim_idle = spr_bolt_knight_idle_placeholder;
+anim_idle = spr_bolt_knight_idle;
 anim_run = spr_bolt_knight_move_right;
 anim_melee = spr_bolt_knight_attack_jab_placeholder;
 anim_death = spr_speardude_death;

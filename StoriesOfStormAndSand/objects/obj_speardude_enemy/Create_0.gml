@@ -76,10 +76,17 @@ move_points_pixels_curr = move_points_pixels;
 cur_node_x = x;
 cur_node_y = y;
 
+is_moving = false;
+
 animations[unit_animation_fields.defender] = spr_bolt_knight_defender_placehoder;
 animations[unit_animation_fields.death_attacker] = spr_bolt_knight_death_attacker;
 animations[unit_animation_fields.death_defender] = spr_bolt_knight_death_defender;
-animations[unit_animation_fields.idle] = spr_bolt_knight_idle_placeholder;
+animations[unit_animation_fields.idle] = spr_speardude_idle_rdy_enemy;
+
+animations[unit_animation_fields.move_ltr] = spr_bolt_knight_walk_ltr_placeholder;
+animations[unit_animation_fields.move_rtl] = spr_bolt_knight_walk_rtl_placeholder;
+animations[unit_animation_fields.move_ttb] = spr_bolt_knight_move_right;
+animations[unit_animation_fields.move_btt] = spr_bolt_knight_move_right;
 
 
 spr_portrait = spr_bolt_knight_portrait;

@@ -1,12 +1,12 @@
 /// @description Assign globals
 
 // Grid globals
-global.grid_left_startpos = 32;
-global.grid_top_startpos = 32;
+global.grid_left_startpos = 24;
+global.grid_top_startpos = 24;
 global.grid_nr_h_cells = 25;
 global.grid_nr_v_cells = 25;
-global.grid_cell_width = 64;
-global.grid_cell_height = 64;
+global.grid_cell_width = 48;
+global.grid_cell_height = 48;
 
 //Pathing globals
 global.path_allow_diag  = 0;
@@ -65,10 +65,10 @@ enum attack_fields
 enum unit_animation_fields
 {
 	idle,
-	move_left,
-	move_right,
-	move_up,
-	move_down,
+	move_ltr,
+	move_rtl,
+	move_ttb,
+	move_btt,
 	defender,
 	dodge,
 	death_attacker,

@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 //Config
-name="House Of Storms";
+name="Sand Alliance";
 controller = states.turn_p_1;
 assigned_parent = par_sand_alliance;
 icon = spr_symbol_sand_alliance;
