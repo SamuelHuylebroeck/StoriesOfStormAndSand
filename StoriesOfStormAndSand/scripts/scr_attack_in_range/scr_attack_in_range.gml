@@ -13,7 +13,7 @@ var origin_y = scr_pixel_y_to_tile_y(origin.y)
 var target_x = scr_pixel_x_to_tile_x(target.x);
 var target_y = scr_pixel_y_to_tile_y(target.y);
 
-var range = sqrt(abs(origin_x-target_x) + abs(origin_y - target_y));
+var range = abs(origin_x-target_x) + abs(origin_y - target_y);
 var outside_min =  range > attack[attack_fields.range_min]-1;
 var inside_max = range <= attack[attack_fields.range_max];
-return  outside_min && inside_max;
+return  outside_min and inside_max;

@@ -58,17 +58,13 @@ has_acted_this_round = false;
 is_moving = false;
 
 //Sprites and animation
+spr_portrait = spr_bolt_knight_portrait;
 animations[unit_animation_fields.defender] = spr_bolt_knight_defender_placehoder;
 animations[unit_animation_fields.death_attacker] = spr_bolt_knight_death_attacker;
 animations[unit_animation_fields.death_defender] = spr_bolt_knight_death_defender;
 animations[unit_animation_fields.idle] = spr_bolt_knight_idle;
-animations[unit_animation_fields.move_ltr] = spr_bolt_knight_walk_ltr_placeholder;
-animations[unit_animation_fields.move_rtl] = spr_bolt_knight_walk_rtl_placeholder;
-animations[unit_animation_fields.move_ttb] = spr_bolt_knight_move_right;
-animations[unit_animation_fields.move_btt] = spr_bolt_knight_move_right;
+animations[unit_animation_fields.move_ltr] = spr_walk_ltr_placeholder;
+animations[unit_animation_fields.move_rtl] = spr_walk_rtl_placeholder;
+animations[unit_animation_fields.move_ttb] = spr_walk_ttb_placeholder;
+animations[unit_animation_fields.move_btt] = spr_walk_btt_placeholder;
 
-spr_portrait = spr_bolt_knight_portrait;
-anim_idle = spr_bolt_knight_idle;
-anim_run = spr_bolt_knight_move_right;
-anim_melee = spr_bolt_knight_attack_jab_placeholder;
-anim_death = spr_speardude_death;
