@@ -34,6 +34,9 @@ global.camera_controllable = true;
 //animation globals
 global.unit_fade_step = 1/(room_speed);
 
+//Control
+global.map_running = false;
+
 //Stat enum
 enum combat_type
 {

@@ -8,5 +8,3 @@ icon = spr_symbol_sand_alliance;
 //internals
 current_turn = 1;
 ds_active_units = ds_list_create();
-//register units
-scr_register_all_assigned_units_in_room();
