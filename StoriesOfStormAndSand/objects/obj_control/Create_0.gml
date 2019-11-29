@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-global.state = states.turn_p_1;
+global.current_turn_controller = controller_id.p_1;
 global.selected = noone;
 global.moving = false;
 global.combat_animation_playing = false;

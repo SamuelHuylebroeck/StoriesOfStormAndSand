@@ -2,7 +2,7 @@
 // You can write your code in this editor
 //Config
 name="Sand Alliance";
-controller = states.turn_p_1;
+controller = noone;
 assigned_parent = par_sand_alliance;
 icon = spr_symbol_sand_alliance;
 //internals

@@ -26,4 +26,4 @@ text_font = font_turn_marker_bahn;
 text_color = make_color_hsv(46,74,255);
 
 //internals
-current_side = global.side_map[global.state];
+current_side = global.side_map[global.current_turn_controller];

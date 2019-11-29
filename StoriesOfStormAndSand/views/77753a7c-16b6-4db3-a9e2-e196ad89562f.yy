@@ -13,7 +13,8 @@
         "4bfebe0c-b35d-4c9a-a996-8bbe06a31a4e",
         "9c50ec62-354f-42d8-b4e8-1a9d72a96b81",
         "10ba4bbf-b9dc-48a8-b9d4-9e135674ce52",
-        "301977a7-ea52-4803-8b91-b55c64acb4df"
+        "301977a7-ea52-4803-8b91-b55c64acb4df",
+        "56290ade-4a5b-4dc8-bc1f-b5d816642466"
     ],
     "filterType": "GMSprite",
     "folderName": "Title Screen",

@@ -3,7 +3,7 @@
 
 //Config
 name="House Of Storms";
-controller = states.turn_p_1;
+controller = noone;
 assigned_parent = par_storm_house;
 icon = spr_symbol_hos;
 //internals

@@ -1,1 +1,1 @@
-return global.side_map[global.state].assigned_parent;
+return global.side_map[global.current_turn_controller].assigned_parent;

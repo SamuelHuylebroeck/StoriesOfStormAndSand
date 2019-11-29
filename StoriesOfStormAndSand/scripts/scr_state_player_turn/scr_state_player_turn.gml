@@ -1,6 +1,6 @@
 ////scr_player_turn
 
-var par_curr_player = global.side_map[global.state].assigned_parent;
+var par_curr_player = global.side_map[global.current_turn_controller].assigned_parent;
 
 if(instance_position(mouse_x, mouse_y,par_curr_player) && mouse_check_button_pressed(mb_left))
 {
