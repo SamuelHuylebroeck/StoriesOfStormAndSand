@@ -10,6 +10,8 @@ text_font = font_turn_marker_bahn;
 column_width = 64;
 row_height = 64;
 column_offset_cells = 5;
+v_initial_offset = 32;
+h_initial_offset = 16;
 v_offset = 64;
 h_spacing = 5;
 
