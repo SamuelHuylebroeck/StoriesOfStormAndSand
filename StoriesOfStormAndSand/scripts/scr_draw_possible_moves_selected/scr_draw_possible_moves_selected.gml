@@ -18,19 +18,22 @@ with(par_enemy){
 }
 
 //Draw
-var center_x = global.selected.x;
-var center_y = global.selected.y;
+var center = scr_get_center_of_occupied_cell(global.selected);
+var center_x = center[0];
+var center_y = center[1];
 var range = global.selected.stats_move_points_sqr;
+var w = global.grid_cell_width;
+var h = global.grid_cell_height
 for(i=-range; i<=range; i+=1){
-	var i_x = i * global.grid_cell_width + center_x;
+	var i_x = i * w + center_x;
 	for(j=-range;j<=range;j++){
-		var i_y = j* global.grid_cell_height+center_y;
+		var i_y = j* h + center_y;
 		//check for move
-		if(mp_grid_path(global.map_grid,global.navigate,global.selected.cur_node_x,global.selected.cur_node_y, i_x,i_y, global.path_allow_diag)){
+		if(mp_grid_path(global.map_grid,global.navigate,center_x,center_y, i_x,i_y, global.path_allow_diag)){
 			if (path_get_length(global.navigate) <= global.selected.move_points_pixels_curr){
-				instance_create_layer(i_x,i_y,"Pathing", obj_move_possible);
+				instance_create_layer(i_x - w/2,i_y - h/2 ,"Pathing", obj_move_possible);
 			}else{
-				instance_create_layer(i_x,i_y,"Pathing", obj_move_impossible);
+				instance_create_layer(i_x - w/2,i_y-h/2,"Pathing", obj_move_impossible);
 			}
 		}
 		

@@ -4,6 +4,8 @@ Turn based strategy game coded as a learning experience in gamemaker studio 2.
 ## Known Issues
 - camera edge-guarding not complete
 - attack init icon is not deleted when it overlaps with attacker sprite
+- map cleanup and restart still has some leaks, quiting out of one map, restarting another and then closing the game throws an exception
+- camera snapback after combat resolution
 
 ## Improvements
 - Map start logic rework for code readability
@@ -42,4 +44,8 @@ Turn based strategy game coded as a learning experience in gamemaker studio 2.
 ### Music
 Music from https://filmmusic.io
 "Clash Defiant" by Kevin MacLeod (https://incompetech.com)
+License: CC BY (http://creativecommons.org/licenses/by/4.0/)
+
+Music from https://filmmusic.io
+"Crossing the Chasm" by Kevin MacLeod (https://incompetech.com)
 License: CC BY (http://creativecommons.org/licenses/by/4.0/)

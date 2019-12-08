@@ -1,6 +1,9 @@
 /// @description Assign globals
 
-// Grid globals
+//global defaults
+global.default_map = rm_game;
+
+// Grid globals and default values
 global.grid_left_startpos = 24;
 global.grid_top_startpos = 24;
 global.grid_nr_h_cells = 25;

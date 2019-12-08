@@ -3,12 +3,10 @@
 var this_map = corresponding_map;
 with(game_start_controller)
 {
+	map_width = 25;
+	map_height = 25;
+	map_x_offset = 0;
+	map_y_offset = 0;
 	current_map = this_map;
 }
 
-global.grid_left_startpos = 24;
-global.grid_top_startpos = 24;
-global.grid_nr_h_cells = 25;
-global.grid_nr_v_cells = 25;
-global.grid_cell_width = 48;
-global.grid_cell_height = 48;

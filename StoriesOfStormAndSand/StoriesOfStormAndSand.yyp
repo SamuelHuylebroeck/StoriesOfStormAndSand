@@ -495,6 +495,14 @@
             }
         },
         {
+            "Key": "3c138e28-9533-4d39-b6d0-33d8c76ab4ac",
+            "Value": {
+                "id": "0dd1b9d5-00a6-4d4e-8db4-de072e4d33ab",
+                "resourcePath": "objects\\obj_title_controller\\obj_title_controller.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3c57b2a7-beb0-4895-a4e8-be56ad3bfbf9",
             "Value": {
                 "id": "4e9e53d7-c3a1-4ccd-aa5d-a313fcf4baf0",
@@ -828,6 +836,14 @@
                 "id": "54b07126-56fe-41b4-bf3d-4391fdb7971a",
                 "resourcePath": "views\\5f9bf95a-cb60-493a-8e7e-d56bd3dd6086.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "612285cf-6cd0-4ebd-b754-f72852deb1b4",
+            "Value": {
+                "id": "4d183b60-8bec-42aa-bb79-d19de444e69f",
+                "resourcePath": "scripts\\scr_get_center_of_cell\\scr_get_center_of_cell.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1623,6 +1639,14 @@
             }
         },
         {
+            "Key": "cc0fe624-7741-4b50-a934-8f3e255f10e4",
+            "Value": {
+                "id": "7d7381ad-7413-4146-b1be-0fd1306113a7",
+                "resourcePath": "sounds\\music_menu_theme\\music_menu_theme.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "cc8d1c50-fb4b-4ef4-8280-9b10dd4ee42b",
             "Value": {
                 "id": "15777cdd-8072-4b26-8656-fd4ef33afae0",
@@ -1772,6 +1796,14 @@
                 "id": "fe36fe97-c330-408a-9c7b-b4c636d25c35",
                 "resourcePath": "sprites\\spr_horizontal_gauge_m\\spr_horizontal_gauge_m.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ddfb3eb5-9ed6-4c0d-8a59-b5b22ca65603",
+            "Value": {
+                "id": "6069d363-6aaa-45b7-8c13-b112599091a1",
+                "resourcePath": "scripts\\scr_get_center_of_occupied_cell\\scr_get_center_of_occupied_cell.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2088,6 +2120,8 @@
         "84baa656-097e-4488-8c4a-d616dcd5b649",
         "34ee9f13-fcd9-4fa8-9178-6029eabac29c",
         "74c0a6a6-af2b-4498-9942-8dee67b84205",
+        "612285cf-6cd0-4ebd-b754-f72852deb1b4",
+        "ddfb3eb5-9ed6-4c0d-8a59-b5b22ca65603",
         "f84813f9-d5ec-45f3-a3ad-c7655ae81ced",
         "332e7a36-3968-4d13-905e-eda0038970e8",
         "ebec8f18-9379-4fc0-894d-6cd2e42579f7",

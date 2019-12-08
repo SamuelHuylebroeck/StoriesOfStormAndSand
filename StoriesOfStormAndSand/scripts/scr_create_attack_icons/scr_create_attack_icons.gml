@@ -20,11 +20,11 @@ else
 }
 
 //Creating the attack icons
-var pos_x = x + sprite_width/2;
-var pos_y = y;
+var pos_x = x + sprite_width;
+var pos_y = y + sprite_height/2;
 if(ds_list_size(ds_possible_attacks) >1)
 {
-pos_y -= (sprite_height);
+	pos_y -= (sprite_height);
 }
 else
 {

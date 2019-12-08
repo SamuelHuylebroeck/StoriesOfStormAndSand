@@ -36,9 +36,12 @@ if(global.selected != noone && mouse_check_button_pressed(mb_right))
 		with(global.selected){
 			var w = global.grid_cell_width;
 			var h = global.grid_cell_height;
-			is_moving = true;
-			scr_navigation(x,y,(round(mouse_x/w))*w,round(mouse_y/h)*h);
-			move_points_pixels_curr -= path_get_length(global.navigate);
+			var center_start = scr_get_center_of_occupied_cell(global.selected);
+			is_moving = scr_navigation(center_start[0],center_start[1],(floor(mouse_x/w))*w + w/2,floor(mouse_y/h)*h + h/2);
+			if(is_moving)
+			{
+				move_points_pixels_curr -= path_get_length(global.navigate);
+			}
 		}
 		scr_possible_moves_clean();
 	}else{
@@ -46,18 +49,17 @@ if(global.selected != noone && mouse_check_button_pressed(mb_right))
 	}
 }
 if(global.moving)
-{
+{	
 	with(global.selected)
 	{
 		if(path_index = -1)
 		{
-			cur_node_x = x;
-			cur_node_y = y;
 			global.moving = false;
 			is_moving = false;
 			if(move_points_pixels_curr >= global.grid_cell_width && !has_acted_this_round){
 				scr_draw_possible_moves_selected();
 			}
 		}
+		
 	}
 }

@@ -12,5 +12,6 @@ if(hover)
 
 if(visible && click)
 {
+	global.camera_controllable = false;
 	room_goto(rm_title);
 }
