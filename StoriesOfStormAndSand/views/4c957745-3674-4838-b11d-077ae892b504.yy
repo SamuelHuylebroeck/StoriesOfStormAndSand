@@ -8,7 +8,8 @@
         "67d3bc2c-9d54-4e35-9651-969880b7b5ca",
         "a5330b2e-e216-41e4-a085-344d82bf6f4f",
         "a45b6899-d73f-4864-a72b-6428ad9dc286",
-        "1c85f9cc-90bb-432a-a384-285ab6ecb612"
+        "1c85f9cc-90bb-432a-a384-285ab6ecb612",
+        "762eb59f-715c-46e8-ae9f-39ea55189850"
     ],
     "filterType": "GMSprite",
     "folderName": "pathing",

@@ -7,6 +7,10 @@ with(par_curr_player){
 		}
 	}
 }
+with(obj_impassable)
+{
+	mp_grid_add_instances(global.map_grid,self,false);
+}
 
 var par_enemy = scr_get_enemy_side_par();
 with(par_enemy){

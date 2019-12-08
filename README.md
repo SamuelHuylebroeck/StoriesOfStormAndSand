@@ -6,30 +6,36 @@ Turn based strategy game coded as a learning experience in gamemaker studio 2.
 - attack init icon is not deleted when it overlaps with attacker sprite
 
 ## Improvements
+- Map start logic rework for code readability
 
 ## Focus
-Initial game mechanics
-- pathfinding 
-- combat
-- unit selection and view
+1st playable version
+- 1 map (done)
+- title screen (done)
+- 2 units (done)
+- game end screen
+- game end logic
 
 ### Mechanics track
-- First map
-- Game start flow
+- Game end logic - flag capture and elimination
+- Terrain effects - hospital and fortress
+- Combat preview window
 - AI turn
+- First Balance Pass
 
 ### Graphics track
-- Bolt Knight finished animations (idle, move lrud, attack jab, attack blast, death)
-- update terrain graphics to 64-bit
-- Fire brawler placeholder animations
+- Bolt Knight finished animations (move lrud, attack blast, death)
+- Fire brawler finished animations (idle, move lrud, attack rush, attack javelin, death)
+- Water Knight concept pass
+- 2nd Sand Alliance unit 
 
 
 ## Planned
 - 2 Factions
-- 4 units per faction
+- 4 units per faction (2/8 partially implemented)
 - Faction Mechanics
-- Fire emblem style combat triangle
-- 3 maps
+- Fire emblem style combat triangle (done)
+- 3 maps (1/3)
 
 ## Additional Credits
 

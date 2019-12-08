@@ -6,9 +6,11 @@ var sa_new_selection = noone;
 var clicked = mouse_check_button_released(mb_left);
 
 //House of storms
-var y_pos = y + v_offset - height/2
+var y_pos = y + v_offset + height/2;
 var x_pos = x + column_start_x - width/2;
 
+
+scr_draw_debug_rectangle(x_pos, y_pos, width, height);
 hos_hover[controller_id.p_1] = scr_is_mouse_hovering_over_raw(x_pos,y_pos,width,height)
 if(clicked and hos_hover[controller_id.p_1])
 {
@@ -30,6 +32,7 @@ if(clicked and hos_hover[controller_id.ai])
 //Sand alliance
 y_pos += row_height;
 x_pos = x + column_start_x - width/2;
+
 sa_hover[controller_id.p_1] = scr_is_mouse_hovering_over_raw(x_pos,y_pos,width,height)
 if(clicked and sa_hover[controller_id.p_1])
 {

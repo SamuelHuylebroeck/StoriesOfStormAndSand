@@ -3,5 +3,9 @@
 var this_map = corresponding_map;
 with(game_start_controller)
 {
+	map_width = 25;
+	map_height = 40;
+	map_x_offset = 0;
+	map_y_offset = 0;
 	current_map = this_map;
 }
