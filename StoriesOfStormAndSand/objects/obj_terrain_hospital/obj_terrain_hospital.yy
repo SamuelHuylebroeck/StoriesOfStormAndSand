@@ -1,14 +1,23 @@
 {
-    "id": "f77a8d6a-fa8f-4f7d-9902-67732476576f",
+    "id": "3760140b-ecf8-4b6f-83b3-384b8b2ba30d",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "par_storm_house",
+    "name": "obj_terrain_hospital",
     "eventList": [
-        
+        {
+            "id": "5a1ad253-4bfc-468e-aa63-65f0f0725e56",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "3760140b-ecf8-4b6f-83b3-384b8b2ba30d"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "335763e8-3d42-448e-91d8-03f3dcb50350",
+    "parentObjectId": "62755c21-761d-4e2b-a546-e72446a50f9b",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -24,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
-    "visible": true
+    "spriteId": "f68733c1-12b4-4499-b530-70746efc9c8c",
+    "visible": false
 }

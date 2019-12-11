@@ -9,7 +9,7 @@ Turn based strategy game coded as a learning experience in gamemaker studio 2.
 
 ## Improvements
 - Map start logic rework for code readability
-
+- Rework unit inheritance so unit objects only have configuration code
 ## Focus
 1st playable version
 - 1 map (done)

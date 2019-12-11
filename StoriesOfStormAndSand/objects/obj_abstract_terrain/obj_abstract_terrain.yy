@@ -1,10 +1,19 @@
 {
-    "id": "bad8bef5-5f22-440b-a409-8aca990dee0b",
+    "id": "62755c21-761d-4e2b-a546-e72446a50f9b",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "par_unit",
+    "name": "obj_abstract_terrain",
     "eventList": [
-        
+        {
+            "id": "b5a77c7f-dacf-4288-8225-554c5309a024",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "62755c21-761d-4e2b-a546-e72446a50f9b"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
@@ -24,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
-    "visible": true
+    "spriteId": "f68733c1-12b4-4499-b530-70746efc9c8c",
+    "visible": false
 }

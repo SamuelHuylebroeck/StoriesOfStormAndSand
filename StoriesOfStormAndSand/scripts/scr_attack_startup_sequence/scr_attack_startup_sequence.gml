@@ -71,8 +71,14 @@ if(attacker != noone and defender != noone and attack != noone)
 	}
 	//calculate derived stats
 	var hit_rate = attack_hit - evade;
+	//Add in terrain
+	if defender.occupied_terrain != noone
+	{
+		hit_rate = max(hit_rate + defender.occupied_terrain.terrain_hit_rate_mod,0);
+		spike = max(spike + defender.occupied_terrain.terrain_spike_mod,0);
+		armor = max(armor + defender.occupied_terrain.terrain_armor_mod,0);
+	}
 	var potential_damage  = attack_strength - armor >= 0? attack_strength - armor : 0;
-	
 	//create visualization objects
 	//Stat block
 	var margin_x = 15;

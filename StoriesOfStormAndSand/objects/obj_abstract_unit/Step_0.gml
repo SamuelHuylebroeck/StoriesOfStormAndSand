@@ -4,7 +4,6 @@ scr_death_cleanup_check();
 var mov_animation = unit_animation_fields.idle;
 if(is_moving)
 {
-	show_debug_message(string(speed) + ", " + string(direction));
 	var mov_animation = unit_animation_fields.idle;
 	if(direction >=315 or (0 <= direction and direction <=45))
 	{
@@ -31,4 +30,13 @@ if(is_moving)
 	}
 }
 sprite_index = animations[mov_animation];
+
+var terrain_inst = instance_place(x, y, obj_abstract_terrain);
+if( terrain_inst != noone)
+{
+	occupied_terrain = terrain_inst;
+	alarm[2] = 5;
+}
+
+
 

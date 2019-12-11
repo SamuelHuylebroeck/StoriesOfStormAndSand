@@ -295,14 +295,6 @@
             }
         },
         {
-            "Key": "2187702d-21a6-4f91-946a-57acd6500a51",
-            "Value": {
-                "id": "afe4aea4-550c-4696-b2b8-74552ec1e23a",
-                "resourcePath": "objects\\obj_speardude_enemy\\obj_speardude_enemy.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "22f51b27-6948-4058-8a2a-0352dc5fafba",
             "Value": {
                 "id": "35241551-5264-4337-830a-6fcbddcbeacc",
@@ -447,6 +439,14 @@
             }
         },
         {
+            "Key": "335763e8-3d42-448e-91d8-03f3dcb50350",
+            "Value": {
+                "id": "05654598-4f41-4525-a0b6-073a8082a929",
+                "resourcePath": "objects\\obj_abstract_unit\\obj_abstract_unit.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3457332c-cde4-4d84-a7c9-263b8685b13c",
             "Value": {
                 "id": "e416e2f4-22c7-45aa-b9a3-37ca8cdc414a",
@@ -483,6 +483,14 @@
             "Value": {
                 "id": "aa4a6c69-fe27-4341-be23-c0c38209b75a",
                 "resourcePath": "objects\\obj_miss_particle\\obj_miss_particle.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "3760140b-ecf8-4b6f-83b3-384b8b2ba30d",
+            "Value": {
+                "id": "d29e1ffe-6ee6-4d9f-bf86-c1eb29defb61",
+                "resourcePath": "objects\\obj_terrain_hospital\\obj_terrain_hospital.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -844,6 +852,14 @@
                 "id": "4d183b60-8bec-42aa-bb79-d19de444e69f",
                 "resourcePath": "scripts\\scr_get_center_of_cell\\scr_get_center_of_cell.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "62755c21-761d-4e2b-a546-e72446a50f9b",
+            "Value": {
+                "id": "ef71bd01-e8dd-404d-91d3-50d45c8bb2b6",
+                "resourcePath": "objects\\obj_abstract_terrain\\obj_abstract_terrain.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1495,14 +1511,6 @@
             }
         },
         {
-            "Key": "bad8bef5-5f22-440b-a409-8aca990dee0b",
-            "Value": {
-                "id": "93aaa19b-3115-41fa-970e-9128c3664c42",
-                "resourcePath": "objects\\par_unit\\par_unit.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "bbcca38f-467c-4f39-b379-859a2056092b",
             "Value": {
                 "id": "4cca53ed-dca2-4fad-bb8f-fa507b6e1cb3",
@@ -1911,6 +1919,14 @@
             }
         },
         {
+            "Key": "eaeb0d2d-e8c6-4386-b13c-fee1c97558c9",
+            "Value": {
+                "id": "7b408974-034f-45e7-b327-81236b7e1d32",
+                "resourcePath": "objects\\obj_terrain_fort\\obj_terrain_fort.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ebec8f18-9379-4fc0-894d-6cd2e42579f7",
             "Value": {
                 "id": "9a66412a-733d-45c8-9d73-a827ff8516c3",
@@ -2012,6 +2028,14 @@
                 "id": "b43e7d9f-c7a4-4699-aca1-0c66539b17a3",
                 "resourcePath": "views\\f67b53d1-5e56-49de-a5f9-7a3669125064.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f68733c1-12b4-4499-b530-70746efc9c8c",
+            "Value": {
+                "id": "b6f0f31f-8560-4d6c-bd07-d5fa34d327c1",
+                "resourcePath": "sprites\\spr_occupy_terrain_mask\\spr_occupy_terrain_mask.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

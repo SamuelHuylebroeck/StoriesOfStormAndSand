@@ -9,3 +9,5 @@ for (var i = 0; i< ds_list_size(ds_gui_elements);i++)
 	}
 }
 ds_list_destroy(ds_gui_elements);
+
+audio_stop_all();

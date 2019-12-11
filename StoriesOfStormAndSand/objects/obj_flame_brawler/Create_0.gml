@@ -40,22 +40,15 @@ attack_two[attack_fields.animation] = spr_flame_brawler_attack_heat_javelin_plac
 attack_two[attack_fields.animation_hit_frame] = 14;
 ds_list_add(ds_attack_list,attack_two);
 
-//old stats
-stats_might = 50;
-stats_hit_rate = 100;
-stats_evade = 80;
-stats_defence = 3;
-
 //Derived stats
 stats_current_hp = stats_max_hp;
 move_points_pixels = stats_move_points_sqr * global.grid_cell_width;
 move_points_pixels_curr = move_points_pixels;
 
-cur_node_x = x;
-cur_node_y = y;
-
 has_acted_this_round = false;
 is_moving = false;
+
+occupied_terrain = noone;
 
 //Sprites and animation
 spr_portrait = spr_bolt_knight_portrait;
