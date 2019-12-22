@@ -2,3 +2,4 @@
 // You can write your code in this editor
 //register units
 scr_register_all_assigned_units_in_room();
+scr_register_side_with_controller();

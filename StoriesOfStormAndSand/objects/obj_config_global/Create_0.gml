@@ -79,5 +79,19 @@ enum unit_animation_fields
 	dodge,
 	death_attacker,
 	death_defender
+
+}
+
+enum end_of_game_outcomes
+{
+	draw,
+	house_of_storms_victory,
+	sand_alliance_victory
+}
+
+enum sides
+{
+	house_of_storms,
+	sand_alliance
 }
 
