@@ -26,6 +26,7 @@
     {"id":{"name":"spr_grass_rock","path":"sprites/spr_grass_rock/spr_grass_rock.yy",},"order":0,},
     {"id":{"name":"spr_out_of_bounds","path":"sprites/spr_out_of_bounds/spr_out_of_bounds.yy",},"order":4,},
     {"id":{"name":"spr_occupy_terrain_mask","path":"sprites/spr_occupy_terrain_mask/spr_occupy_terrain_mask.yy",},"order":5,},
+    {"id":{"name":"scr_start_task_execution","path":"scripts/scr_start_task_execution/scr_start_task_execution.yy",},"order":1,},
     {"id":{"name":"spr_miss_particle","path":"sprites/spr_miss_particle/spr_miss_particle.yy",},"order":0,},
     {"id":{"name":"spr_miss_text","path":"sprites/spr_miss_text/spr_miss_text.yy",},"order":1,},
     {"id":{"name":"spr_next_turn_button","path":"sprites/spr_next_turn_button/spr_next_turn_button.yy",},"order":0,},
@@ -65,6 +66,7 @@
     {"id":{"name":"spr_map_name_container","path":"sprites/spr_map_name_container/spr_map_name_container.yy",},"order":11,},
     {"id":{"name":"spr_title_map_select_faction_container","path":"sprites/spr_title_map_select_faction_container/spr_title_map_select_faction_container.yy",},"order":12,},
     {"id":{"name":"spr_quit_button","path":"sprites/spr_quit_button/spr_quit_button.yy",},"order":5,},
+    {"id":{"name":"scr_start_move_task","path":"scripts/scr_start_move_task/scr_start_move_task.yy",},"order":0,},
     {"id":{"name":"spr_symbol_hos","path":"sprites/spr_symbol_hos/spr_symbol_hos.yy",},"order":0,},
     {"id":{"name":"spr_bolt_knight_move_right","path":"sprites/spr_bolt_knight_move_right/spr_bolt_knight_move_right.yy",},"order":0,},
     {"id":{"name":"spr_bolt_knight_attack_jab_placeholder","path":"sprites/spr_bolt_knight_attack_jab_placeholder/spr_bolt_knight_attack_jab_placeholder.yy",},"order":1,},
@@ -293,6 +295,7 @@
     {"folderPath":"folders/Scripts/control/turn logic/ai turn execution.yy","order":3,"resourceVersion":"1.0","name":"ai turn execution","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/control/ai.yy","order":5,"resourceVersion":"1.0","name":"ai","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts/control/turn logic/ai turn execution/priority calc.yy","order":4,"resourceVersion":"1.0","name":"priority calc","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Scripts/control/turn logic/ai turn execution/task execution.yy","order":7,"resourceVersion":"1.0","name":"task execution","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":461609314234257646,"resourceVersion":"1.0","name":"audiogroup_default","resourceType":"GMAudioGroup",},

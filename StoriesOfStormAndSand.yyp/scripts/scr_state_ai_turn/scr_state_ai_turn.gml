@@ -8,10 +8,10 @@ function scr_state_ai_turn(){
 		show_debug_message("Creating controller")
 		global.ai_turn_in_progress=true
 		global.ai_turn_completed=false
-		ai_turn_controller = instance_create_layer(obj_ai_turn_controller, "Logic",0,0)
+		ai_turn_controller = instance_create_layer(0,0,"Logic", obj_ai_turn_controller)
 		global.ai_turn_controller = ai_turn_controller
 		with(global.ai_turn_controller){
-			
+			scr_ai_turn_initialize_controller()
 		}
 	}
 		
