@@ -1,22 +1,7 @@
 function scr_draw_possible_moves_selected() {
 	mp_grid_clear_all(global.map_grid);
-	var par_curr_player =scr_get_active_side_par();
-	with(par_curr_player){
-		if(global.selected != noone){
-			if(self.id != global.selected.id){
-				mp_grid_add_instances(global.map_grid,self,false);
-			}
-		}
-	}
-	with(obj_impassable)
-	{
-		mp_grid_add_instances(global.map_grid,self,false);
-	}
 
-	var par_enemy = scr_get_enemy_side_par();
-	with(par_enemy){
-		mp_grid_add_instances(global.map_grid,self,false);
-	}
+	scr_add_impassible_tiles_to_grid(global.selected)
 
 	//Draw
 	var center = scr_get_center_of_occupied_cell(global.selected);

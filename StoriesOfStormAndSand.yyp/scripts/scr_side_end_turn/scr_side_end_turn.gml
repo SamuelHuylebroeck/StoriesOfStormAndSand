@@ -12,8 +12,4 @@ function scr_side_end_turn() {
 			scr_refresh_unit();
 		}
 	}
-
-
-
-
 }

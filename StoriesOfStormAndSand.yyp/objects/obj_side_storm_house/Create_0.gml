@@ -9,4 +9,3 @@ icon = spr_symbol_hos;
 //internals
 current_turn = 1;
 ds_active_units = ds_list_create();
-active = true;

@@ -7,6 +7,4 @@ function scr_death_cleanup_check() {
 			instance_destroy();
 		}
 	}
-
-
 }

@@ -58,6 +58,6 @@ animations[unit_animation_fields.death_defender] = spr_bolt_knight_death_defende
 animations[unit_animation_fields.idle] = spr_bolt_knight_idle;
 animations[unit_animation_fields.move_ltr] = spr_walk_ltr_placeholder;
 animations[unit_animation_fields.move_rtl] = spr_walk_rtl_placeholder;
-animations[unit_animation_fields.move_ttb] = spr_walk_ttb_placeholder;
+animations[unit_animation_fields.move_ttb] = spr_bolt_knight_walk_top_to_bottom;
 animations[unit_animation_fields.move_btt] = spr_walk_btt_placeholder;
 

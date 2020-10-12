@@ -39,6 +39,11 @@ global.unit_fade_step = 1/(room_speed);
 
 //Control
 global.map_running = false;
+global.active_side = noone;
+global.inactive_side= noone; 
+global.ai_turn_in_progress = false;
+global.ai_turn_controller = false;
+global.ai_turn_completed = true;
 
 //Stat enum
 enum combat_type

@@ -10,5 +10,8 @@ if(global.map_running)
 		case controller_id.p_2:
 			scr_state_player_turn();
 			break;
+		case controller_id.ai:
+			scr_state_ai_turn();
+			break;
 	}
 }

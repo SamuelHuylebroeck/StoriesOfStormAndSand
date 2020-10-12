@@ -5,6 +5,12 @@ function scr_start_map() {
 
 	global.side_map[storm_house.controller] = storm_house;
 	global.side_map[sand_alliance.controller] = sand_alliance;
+	
+	global.active_players[0] = storm_house_controller;
+	global.active_players[1] = sand_alliance_controller;
+	
+	global.active_side = storm_house
+	global.inactive_side = sand_alliance
 
 	global.grid_nr_h_cells = map_width;
 	global.grid_nr_v_cells = map_height;
