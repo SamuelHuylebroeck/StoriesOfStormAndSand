@@ -47,6 +47,9 @@ global.ai_turn_in_progress = false;
 global.ai_turn_controller = false;
 global.ai_turn_completed = true;
 
+//AI behaviour knobs
+global.ai_primary_priority_scalar = 100
+
 //Stat enum
 enum combat_type
 {

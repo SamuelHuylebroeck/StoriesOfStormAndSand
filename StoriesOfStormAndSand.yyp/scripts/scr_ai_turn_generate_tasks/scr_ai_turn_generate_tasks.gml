@@ -9,7 +9,7 @@ function scr_ai_turn_generate_tasks(executor, targets, queue){
 		// Generate Move tasks
 		generate_move_tasks(executor, target, queue)
 		//Generate Attack tasks
-		//generate_attack_tasks(executor, target, queue)
+		generate_attack_tasks(executor, target, queue)
 		// Generate Move and Attack tasks
 		generate_move_and_attack_tasks(executor, target, queue)
 		// Generate Heal tasks
@@ -82,7 +82,7 @@ function generate_attack_tasks(executor, target, queue){
 			attack_task.assigned_attack = attack
 			attack_task.target = target
 			attack_task.controller = self;
-			attack_task.priority = scr_ai_turn_priority_attack_task(executor, task, target)
+			attack_task.priority = scr_ai_turn_priority_attack_task(executor, attack_task, target)
 			ds_priority_add(queue, attack_task, attack_task.priority + attack_task.priority_modifier)
 		}else{
 			show_debug_message(string(attack[attack_fields.name] +" was not in range"))

@@ -40,46 +40,10 @@ function scr_attack_startup_sequence() {
 		defender_anim_control.combat_controller = self;
 		ds_list_add(ds_list_combat_controller_components, defender_anim_control);
 	
-		//Determine the attack resolution
-		//Get the refined stats
-		var attack_relation = scr_attack_get_type_relation(attack[attack_fields.type], defender.stats_type);
-		var defense_relation = scr_attack_get_type_relation(defender.stats_type, attack[attack_fields.type]);
-		var attack_strength, attack_hit;
-		switch(attack_relation)
-		{
-			case combat_relation.normal:
-				attack_strength = attack[attack_fields.strength_normal];
-				attack_hit = attack[attack_fields.hit_normal];
-				break;
-			case combat_relation.weak:
-				attack_strength = attack[attack_fields.strength_weak];
-				attack_hit = attack[attack_fields.hit_weak];
-				break;
-		}
-		var armor, evade, spike
-		switch(defense_relation)
-		{
-			case combat_relation.normal:
-				armor = defender.stats_armor_normal;
-				evade = defender.stats_evade_normal;
-				spike = defender.stats_spike_normal;
-				break;
-			case combat_relation.weak:
-				armor = defender.stats_armor_weak;
-				evade = defender.stats_evade_weak;
-				spike = defender.stats_spike_weak;
-				break;
-		}
-		//calculate derived stats
-		var hit_rate = attack_hit - evade;
-		//Add in terrain
-		if defender.occupied_terrain != noone
-		{
-			hit_rate = max(hit_rate + defender.occupied_terrain.terrain_hit_rate_mod,0);
-			spike = max(spike + defender.occupied_terrain.terrain_spike_mod,0);
-			armor = max(armor + defender.occupied_terrain.terrain_armor_mod,0);
-		}
-		var potential_damage  = attack_strength - armor >= 0? attack_strength - armor : 0;
+		var refine_results = scr_attack_distill_refined_stats(attack, defender)
+		var hit_rate = refine_results.hr
+		var potential_damage = refine_results.pd
+		var spike = refine_results.sp
 		//create visualization objects
 		//Stat block
 		var margin_x = 15;
@@ -123,7 +87,7 @@ function scr_attack_startup_sequence() {
 		//resolve the attack
 		//determine if hit
 		var hit_roll = irandom(100);
-		var is_hit = hit_roll < hit_rate;
+		var is_hit = hit_roll <= hit_rate;
 	
 		if(is_hit)
 		{

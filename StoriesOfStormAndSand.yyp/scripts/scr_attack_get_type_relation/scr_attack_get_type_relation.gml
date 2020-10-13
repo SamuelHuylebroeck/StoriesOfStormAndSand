@@ -1,10 +1,6 @@
 ///@function scr_attack_get_type_relation(type, type_to_compare)
 ///@description compare the passed type to the other passed type to get the strength relation of the first type
-function scr_attack_get_type_relation(argument0, argument1) {
-
-	var type = argument0;
-	var type_to_compare = argument1;
-
+function scr_attack_get_type_relation(type, type_to_compare) {
 	switch(type)
 	{
 		case combat_type.brutal:

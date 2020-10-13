@@ -4,12 +4,12 @@
 //Configurable stats
 stats_name = "Bolt Knight";
 stats_move_points_sqr  = 7;
-stats_max_hp = 50;
+stats_max_hp = 100;
 stats_type = combat_type.swift;
 stats_armor_normal = 10;
-stats_armor_weak = 10;
+stats_armor_weak = 7;
 stats_evade_normal = 25;
-stats_evade_weak = 0;
+stats_evade_weak = 10;
 stats_spike_normal  = 5;
 stats_spike_weak = 2;
 
@@ -20,10 +20,10 @@ attack_one[attack_fields.name] = "Lightning Jab"
 attack_one[attack_fields.range_min] = 1 ;
 attack_one[attack_fields.range_max] = 1;
 attack_one[attack_fields.type] = combat_type.swift;
-attack_one[attack_fields.strength_weak] = 5;
-attack_one[attack_fields.strength_normal] = 15;
-attack_one[attack_fields.hit_normal] = 50;
-attack_one[attack_fields.hit_weak] = 30;
+attack_one[attack_fields.strength_weak] = 20 ;
+attack_one[attack_fields.strength_normal] = 30;
+attack_one[attack_fields.hit_normal] = 110;
+attack_one[attack_fields.hit_weak] = 70;
 attack_one[attack_fields.animation] = spr_bolt_knight_attack_jab;
 attack_one[attack_fields.animation_hit_frame] = 7;
 ds_list_add(ds_attack_list,attack_one);
