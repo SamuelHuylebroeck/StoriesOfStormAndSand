@@ -4,3 +4,4 @@ priority = 0
 priority_modifier = 0
 executor = noone
 controller = noone
+task_started = false

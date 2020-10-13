@@ -30,3 +30,6 @@ animation_end_started = false;
 ds_list_combat_controller_components = ds_list_create();
 global.camera_controllable = false;
 
+//AI control
+linked_ai_task = noone
+

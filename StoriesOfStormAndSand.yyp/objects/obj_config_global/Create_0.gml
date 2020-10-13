@@ -36,6 +36,8 @@ global.camera_controllable = true;
 
 //animation globals
 global.unit_fade_step = 1/(room_speed);
+global.ai_combat_startup_delay_seconds = 0.5
+global.ai_combat_end_sequence_delay_seconds = 0.5
 
 //Control
 global.map_running = false;

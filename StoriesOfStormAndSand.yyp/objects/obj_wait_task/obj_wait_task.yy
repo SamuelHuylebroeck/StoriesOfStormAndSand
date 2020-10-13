@@ -20,12 +20,14 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"parent":{"name":"obj_wait_task","path":"objects/obj_wait_task/obj_wait_task.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "ai",
-    "path": "folders/Objects/control/ai.yy",
+    "name": "tasks",
+    "path": "folders/Objects/control/ai/tasks.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_wait_task",

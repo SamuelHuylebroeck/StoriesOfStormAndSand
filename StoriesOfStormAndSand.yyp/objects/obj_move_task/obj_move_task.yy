@@ -28,8 +28,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "ai",
-    "path": "folders/Objects/control/ai.yy",
+    "name": "tasks",
+    "path": "folders/Objects/control/ai/tasks.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_move_task",
