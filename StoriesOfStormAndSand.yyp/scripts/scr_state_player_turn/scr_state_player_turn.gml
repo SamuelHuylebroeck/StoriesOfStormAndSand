@@ -2,6 +2,7 @@
 function scr_state_player_turn() {
 
 	var par_curr_player = global.active_side.assigned_parent;
+	var par_enemy = scr_get_enemy_side_par()
 
 	if(instance_position(mouse_x, mouse_y,par_curr_player) && mouse_check_button_pressed(mb_left))
 	{
@@ -12,7 +13,9 @@ function scr_state_player_turn() {
 			//delete old stat card
 			with(obj_gui_unit_stats)
 			{
-				instance_destroy();
+				if (self.unit == global.selected){
+					instance_destroy();
+				}
 			}
 			global.selected=player_unit;
 			scr_possible_moves_clean();
@@ -25,7 +28,30 @@ function scr_state_player_turn() {
 			scr_draw_possible_moves_selected();
 		}
 	}
-
+	
+	if(instance_position(mouse_x, mouse_y,par_enemy) && mouse_check_button_pressed(mb_left))
+	{
+		var enemy_unit;
+		enemy_unit = instance_nearest(mouse_x,mouse_y,par_enemy);
+		if(enemy_unit.id != global.enemy_selected){
+			//delete old stat card
+			with(obj_gui_unit_stats)
+			{
+				if (self.unit == global.enemy_selected){
+					instance_destroy();
+				}
+			}
+			global.enemy_selected=enemy_unit;
+			//Create unit stats view
+			var gui_unit_stats = instance_create_layer(0,0,"Gui", obj_gui_unit_stats);
+			gui_unit_stats.unit = global.enemy_selected;
+			gui_unit_stats.screen_offset_x += global.enemy_stat_card_shift
+			with(gui_unit_stats){
+				scr_gui_unit_recalculate_anchor_points()
+			}
+	
+		}
+	}
 
 	if(global.selected != noone && mouse_check_button_pressed(mb_right))
 	{

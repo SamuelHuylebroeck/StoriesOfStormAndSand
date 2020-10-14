@@ -35,7 +35,7 @@ var margin_y = 15;
 if(attacker != noone)
 {
 
-	var length = 2;
+	var length = 3;
 	scr_gui_unit_stats_assemble_background_small(top_left_corner_x + margin_x, top_left_corner_y + margin_y,length,component_width,component_height);
 	var name = attacker.stats_name;
 	var old_align = draw_get_valign();
@@ -48,7 +48,7 @@ if(attacker != noone)
 //Defender
 if(defender != noone)
 {
-	var length = 2;
+	var length = 3;
 	var pos_x = top_left_corner_x + width*component_width - margin_x - length * component_width;
 	scr_gui_unit_stats_assemble_background_small(pos_x, top_left_corner_y + margin_y,length,component_width,component_height);
 	var name = defender.stats_name;

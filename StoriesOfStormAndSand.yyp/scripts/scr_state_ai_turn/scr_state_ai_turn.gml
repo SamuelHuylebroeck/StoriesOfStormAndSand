@@ -5,10 +5,13 @@ function scr_state_ai_turn(){
 		show_debug_message("Creating controller")
 		global.ai_turn_in_progress=true
 		global.ai_turn_completed=false
-		ai_turn_controller = instance_create_layer(0,0,"Logic", obj_ai_turn_controller)
+		var ai_turn_controller = instance_create_layer(0,0,"Logic", obj_ai_turn_controller)
 		global.ai_turn_controller = ai_turn_controller
 		with(global.ai_turn_controller){
 			scr_ai_turn_initialize_controller()
+		}
+		with(obj_next_turn_button){
+			visible=false
 		}
 	}
 	if (global.ai_turn_completed==true){
@@ -18,5 +21,8 @@ function scr_state_ai_turn(){
 		instance_destroy(global.ai_turn_controller)
 		global.ai_turn_controller = noone
 		scr_next_turn()
+		with(obj_next_turn_button){
+			visible=true
+		}
 	}
 }

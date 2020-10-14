@@ -39,7 +39,7 @@ current_pos_x = content_left_edge;
 current_pos_y += 2*internal_offset_y;
 //double line
 draw_set_color(c_black);
-draw_line_width(current_pos_x, current_pos_y , current_pos_x + width * component_width - internal_offset_x - screen_offset_x - internal_start_offset_x, current_pos_y, internal_offset_x);
+draw_line_width(current_pos_x, current_pos_y , current_pos_x + width * component_width - internal_offset_x - 2* internal_start_offset_x, current_pos_y, internal_offset_x);
 current_pos_y += 2* internal_offset_y
 //armor
 text_pos = current_pos_x;
@@ -73,7 +73,7 @@ current_pos_x = content_left_edge;
 current_pos_y += 2*internal_offset_y;
 //double line
 draw_set_color(c_black);
-draw_line_width(current_pos_x, current_pos_y , current_pos_x + width * component_width - internal_offset_x - screen_offset_x - internal_start_offset_x, current_pos_y, internal_offset_x);
+draw_line_width(current_pos_x, current_pos_y , current_pos_x + width * component_width - internal_offset_x - 2* internal_start_offset_x, current_pos_y, internal_offset_x);
 current_pos_y += 2* internal_offset_y
 
 for(j=0; j< ds_list_size(unit.ds_attack_list);j++)

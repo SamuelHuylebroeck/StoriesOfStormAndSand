@@ -14,7 +14,7 @@ function scr_navigation(argument0, argument1, argument2, argument3) {
 	else
 	{
 		mp_grid_path(global.map_grid, global.navigate, start_x,start_y,end_x,end_y,global.path_allow_diag);
-		path_start(global.navigate, global.path_move_speed,0 ,false);
+		path_start(global.navigate, global.path_move_speed,path_action_stop ,false);
 		return true;
 	}
 

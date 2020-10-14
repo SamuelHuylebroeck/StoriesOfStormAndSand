@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(image_index == animation_hit_frame_index)
+if(floor(image_index) == animation_hit_frame_index)
 {
 	if(miss)
 	{

@@ -25,9 +25,9 @@ global.debug_draw_grid = false;
 global.attack_max_range = 4;
 
 //Querty Azerty stuff
-azerty = true;
-global.up = azerty?"Z":"W";
-global.left = azerty?"Q":"A";
+global.azerty = true;
+global.up = global.azerty?"Z":"W";
+global.left = global.azerty?"Q":"A";
 global.down = "S";
 global.right = "D";
 
@@ -49,6 +49,9 @@ global.ai_turn_completed = true;
 
 //AI behaviour knobs
 global.ai_primary_priority_scalar = 100
+
+//GUI globals
+global.enemy_stat_card_shift = 1100
 
 //Stat enum
 enum combat_type

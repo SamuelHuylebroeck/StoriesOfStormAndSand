@@ -1,7 +1,7 @@
 function scr_querty_azerty_switch() {
-	azerty = !azerty;
-	global.up = azerty?"Z":"W";
-	global.left = azerty?"Q":"A";
+	global.azerty = !global.azerty;
+	global.up = global.azerty?"Z":"W";
+	global.left = global.azerty?"Q":"A";
 
 
 }
