@@ -4,7 +4,9 @@ function scr_state_player_turn() {
 	var par_curr_player = global.active_side.assigned_parent;
 	var par_enemy = scr_get_enemy_side_par()
 
-	if(instance_position(mouse_x, mouse_y,par_curr_player) && mouse_check_button_pressed(mb_left))
+
+	//Select player unit
+	if(instance_position(mouse_x, mouse_y,par_curr_player) && mouse_check_button_pressed(mb_left) && !global.moving)
 	{
 		var player_unit;
 		player_unit = instance_nearest(mouse_x,mouse_y,par_curr_player);
@@ -29,6 +31,7 @@ function scr_state_player_turn() {
 		}
 	}
 	
+	//Select enemy unit
 	if(instance_position(mouse_x, mouse_y,par_enemy) && mouse_check_button_pressed(mb_left))
 	{
 		var enemy_unit;
@@ -53,6 +56,7 @@ function scr_state_player_turn() {
 		}
 	}
 
+	
 	if(global.selected != noone && mouse_check_button_pressed(mb_right))
 	{
 		//Moving
@@ -75,12 +79,22 @@ function scr_state_player_turn() {
 			scr_deselect();
 		}
 	}
+		
+	if (global.selected == noone && mouse_check_button_pressed(mb_right)) {
+		scr_deselect()
+	}
+	
+	show_debug_message(string(global.moving))
 	if(global.moving)
 	{	
 		with(global.selected)
 		{
-			if(path_index = -1)
+			show_debug_message("Inside global moving and global selected")
+			show_debug_message(string(path_position))
+			show_debug_message(string(path_index))
+			if(path_index == -1)
 			{
+				show_debug_message("Global moving turned off")
 				global.moving = false;
 				is_moving = false;
 				if(move_points_pixels_curr >= global.grid_cell_width && !has_acted_this_round){

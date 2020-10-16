@@ -17,6 +17,4 @@ function scr_navigation(argument0, argument1, argument2, argument3) {
 		path_start(global.navigate, global.path_move_speed,path_action_stop ,false);
 		return true;
 	}
-
-
 }
