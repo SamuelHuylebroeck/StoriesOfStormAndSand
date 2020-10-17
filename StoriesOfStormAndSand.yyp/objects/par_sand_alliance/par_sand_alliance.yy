@@ -20,12 +20,14 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":12,"collisionObjectId":null,"parent":{"name":"par_sand_alliance","path":"objects/par_sand_alliance/par_sand_alliance.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "flow",
-    "path": "folders/Objects/control/flow.yy",
+    "name": "Sand Alliance",
+    "path": "folders/Objects/units/Sand Alliance.yy",
   },
   "resourceVersion": "1.0",
   "name": "par_sand_alliance",

@@ -5,6 +5,7 @@ global.selected = noone;
 global.enemy_selected = noone;
 global.moving = false;
 global.combat_animation_playing = false;
+global.game_in_progress = true;
 
 ds_gui_elements = ds_list_create();
 move_grid_drawn = false;

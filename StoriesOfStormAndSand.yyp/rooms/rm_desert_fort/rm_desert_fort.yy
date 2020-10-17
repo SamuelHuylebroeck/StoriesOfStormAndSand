@@ -239,6 +239,8 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_terrain_fort","path":"objects/obj_terrain_fort/obj_terrain_fort.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":144.0,"y":144.0,"resourceVersion":"1.0","name":"inst_A9E47CF","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_terrain_fort","path":"objects/obj_terrain_fort/obj_terrain_fort.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":144.0,"y":48.0,"resourceVersion":"1.0","name":"inst_28A1811","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_terrain_hospital","path":"objects/obj_terrain_hospital/obj_terrain_hospital.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":336.0,"y":912.0,"resourceVersion":"1.0","name":"inst_5977CA33","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_terrain_flag_storm_house","path":"objects/obj_terrain_flag_storm_house/obj_terrain_flag_storm_house.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":96.0,"y":96.0,"resourceVersion":"1.0","name":"inst_56C86624","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_terrain_flag_sand_alliance","path":"objects/obj_terrain_flag_sand_alliance/obj_terrain_flag_sand_alliance.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1056.0,"y":96.0,"resourceVersion":"1.0","name":"inst_39EB3487","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":700,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":48,"gridY":48,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Terrain","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"tile_desert_base","path":"tilesets/tile_desert_base/tile_desert_base.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":25,"SerialiseHeight":40,"TileSerialiseData":[
 1,11,16,16,16,6,1,11,16,16,31,31,31,31,31,16,16,16,16,16,16,16,16,16,16,
@@ -503,6 +505,8 @@
     {"name":"inst_A9E47CF","path":"rooms/rm_desert_fort/rm_desert_fort.yy",},
     {"name":"inst_28A1811","path":"rooms/rm_desert_fort/rm_desert_fort.yy",},
     {"name":"inst_5977CA33","path":"rooms/rm_desert_fort/rm_desert_fort.yy",},
+    {"name":"inst_56C86624","path":"rooms/rm_desert_fort/rm_desert_fort.yy",},
+    {"name":"inst_39EB3487","path":"rooms/rm_desert_fort/rm_desert_fort.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

@@ -1,7 +1,6 @@
 ///@function scr_get_center_of_occupied_cell(object occupier)
 ///@description get the center of the grid cell that this object is currently occupying
-function scr_get_center_of_occupied_cell(argument0) {
-	var occupier = argument0
+function scr_get_center_of_occupied_cell(occupier) {
 	var cell_x, cell_y;
 	with(occupier){
 		cell_x = floor(x/global.grid_cell_width);

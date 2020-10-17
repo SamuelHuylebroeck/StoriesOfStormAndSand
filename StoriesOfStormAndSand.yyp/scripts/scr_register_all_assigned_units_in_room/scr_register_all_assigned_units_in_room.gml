@@ -4,6 +4,4 @@ function scr_register_all_assigned_units_in_room() {
 	{
 		ds_list_add(other.ds_active_units,self);
 	}
-
-
 }

@@ -16,8 +16,12 @@ function scr_draw_possible_moves_selected() {
 			var i_y = j* h + center_y;
 			//check for move
 			if(mp_grid_path(global.map_grid,global.navigate,center_x,center_y, i_x,i_y, global.path_allow_diag)){
-				if (path_get_length(global.navigate) <= global.selected.move_points_pixels_curr){
-					instance_create_layer(i_x - w/2,i_y - h/2 ,"Pathing", obj_move_possible);
+				if (path_get_length(global.navigate) <= global.selected.move_points_pixels_curr)
+				{
+					//Check if this space is occupied
+					if(!position_meeting(i_x,i_y, obj_abstract_unit)){
+						instance_create_layer(i_x - w/2,i_y - h/2 ,"Pathing", obj_move_possible);
+					}
 				}else{
 					instance_create_layer(i_x - w/2,i_y-h/2,"Pathing", obj_move_impossible);
 				}

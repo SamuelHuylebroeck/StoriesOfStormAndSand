@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"b59ea948-81de-4e73-adb6-89998bc288be","path":"sprites/spr_symbol_hos/spr_symbol_hos.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b59ea948-81de-4e73-adb6-89998bc288be","path":"sprites/spr_symbol_hos/spr_symbol_hos.yy",},"LayerId":{"name":"a2971e0e-7d1a-40fc-9a40-122d51514260","path":"sprites/spr_symbol_hos/spr_symbol_hos.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_symbol_hos","path":"sprites/spr_symbol_hos/spr_symbol_hos.yy",},"resourceVersion":"1.0","name":"b59ea948-81de-4e73-adb6-89998bc288be","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"f49839fd-caa8-4373-b1a7-3f3029b4d9e5","path":"sprites/spr_symbol_hos/spr_symbol_hos.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"f49839fd-caa8-4373-b1a7-3f3029b4d9e5","path":"sprites/spr_symbol_hos/spr_symbol_hos.yy",},"LayerId":{"name":"c6b59dd3-8361-4a9b-9be6-6ef754d73d93","path":"sprites/spr_symbol_hos/spr_symbol_hos.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_symbol_hos","path":"sprites/spr_symbol_hos/spr_symbol_hos.yy",},"resourceVersion":"1.0","name":"f49839fd-caa8-4373-b1a7-3f3029b4d9e5","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_symbol_hos","path":"sprites/spr_symbol_hos/spr_symbol_hos.yy",},
@@ -41,10 +41,10 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"06362a00-0577-4ddd-9e7b-9f1fb47b6b88","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b59ea948-81de-4e73-adb6-89998bc288be","path":"sprites/spr_symbol_hos/spr_symbol_hos.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7ee70ac9-1768-473c-97c2-84e48c66e7b2","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f49839fd-caa8-4373-b1a7-3f3029b4d9e5","path":"sprites/spr_symbol_hos/spr_symbol_hos.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a2971e0e-7d1a-40fc-9a40-122d51514260","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c6b59dd3-8361-4a9b-9be6-6ef754d73d93","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "House Of Storms",

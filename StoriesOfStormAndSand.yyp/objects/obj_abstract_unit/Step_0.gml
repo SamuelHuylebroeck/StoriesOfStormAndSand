@@ -27,12 +27,10 @@ if(path_index != -1 && is_moving)
 }
 sprite_index = animations[mov_animation];
 
-var terrain_inst = instance_place(x, y, obj_abstract_terrain);
-if( terrain_inst != noone)
-{
-	occupied_terrain = terrain_inst;
-	alarm[2] = 5;
+if(position_meeting(x,y, obj_abstract_terrain)){
+	occupied_terrain = instance_nearest(x,y,obj_abstract_terrain)
+}else{
+	occupied_terrain = noone
 }
-
 
 

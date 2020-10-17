@@ -20,12 +20,14 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":12,"collisionObjectId":null,"parent":{"name":"par_storm_house","path":"objects/par_storm_house/par_storm_house.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "flow",
-    "path": "folders/Objects/control/flow.yy",
+    "name": "House Of Storms",
+    "path": "folders/Objects/units/House Of Storms.yy",
   },
   "resourceVersion": "1.0",
   "name": "par_storm_house",
