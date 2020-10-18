@@ -2,7 +2,7 @@
 // You can write your code in this editor
 scr_death_cleanup_check();
 var mov_animation = unit_animation_fields.idle;
-if(path_index != -1 && is_moving)
+if(path_index != -1)
 {
 	var mov_animation = unit_animation_fields.idle;
 	if(direction >=315 or (0 <= direction and direction <=45))

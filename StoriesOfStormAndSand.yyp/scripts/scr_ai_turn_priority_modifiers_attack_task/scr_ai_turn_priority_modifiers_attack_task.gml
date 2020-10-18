@@ -13,15 +13,15 @@ function scr_ai_turn_priority_modifiers_attack_task(task, moving, target_flag_ob
 	if(!moving && task.executor.occupied_terrain != noone){
 		//Flag
 		if(object_is_ancestor(task.executor.occupied_terrain.object_index, obj_abstract_flag)){
-			result += 1000
+			result += 1600
 			if(task.executor.occupied_terrain.object_index== target_flag_object){
 				//Put waiting on enemy flags higher than moving into new ones
-				result +=1000
+				result +=400
 			}
 		}
 		//Fort
 		if(task.executor.occupied_terrain.object_index == obj_terrain_fort){	
-			result += 200
+			result += 50
 		}
 		//Hospital
 		if(object_is_ancestor(task.executor.occupied_terrain.object_index, obj_terrain_hospital)){	

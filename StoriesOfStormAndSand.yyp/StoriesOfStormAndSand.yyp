@@ -63,6 +63,7 @@
     {"id":{"name":"spr_title_button_quit","path":"sprites/spr_title_button_quit/spr_title_button_quit.yy",},"order":3,},
     {"id":{"name":"spr_title_button_info","path":"sprites/spr_title_button_info/spr_title_button_info.yy",},"order":4,},
     {"id":{"name":"scr_add_impassible_tiles_to_grid","path":"scripts/scr_add_impassible_tiles_to_grid/scr_add_impassible_tiles_to_grid.yy",},"order":7,},
+    {"id":{"name":"obj_move_to_flag_task","path":"objects/obj_move_to_flag_task/obj_move_to_flag_task.yy",},"order":4,},
     {"id":{"name":"spr_title_button_options","path":"sprites/spr_title_button_options/spr_title_button_options.yy",},"order":5,},
     {"id":{"name":"spr_title_button_start","path":"sprites/spr_title_button_start/spr_title_button_start.yy",},"order":6,},
     {"id":{"name":"spr_title_button_back","path":"sprites/spr_title_button_back/spr_title_button_back.yy",},"order":7,},

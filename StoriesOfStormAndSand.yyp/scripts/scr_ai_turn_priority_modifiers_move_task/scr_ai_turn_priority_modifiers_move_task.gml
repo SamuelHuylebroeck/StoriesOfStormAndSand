@@ -11,15 +11,20 @@ function scr_ai_turn_priority_modifiers_move_task(task, flag_object){
 	//Prioritize flags
 	var closest_flag = instance_nearest(point_x, point_y, obj_abstract_flag)
 	if(scr_instance_occupies_cell(closest_flag, point_x, point_y)){
-		result += 1000
-		if(object_is_ancestor(closest_flag.object_index, flag_object) or closest_flag.occupying_unit == noone){
-			result +=1000
+		if (closest_flag.occupying_unit != noone and object_is_ancestor(closest_flag.occupying_unit.object_index, scr_get_active_side_par())){
+			result -=1000
+		}
+		if(closest_flag.object_index == flag_object or object_is_ancestor(closest_flag.object_index, flag_object)){
+			result +=300
+		}
+		if(closest_flag.occupying_unit == noone){
+			result += 100
 		}
 	}
 	
 	var closest_fort = instance_nearest(point_x, point_y , obj_terrain_fort)
 	if(scr_instance_occupies_cell(closest_fort, point_x, point_y)){
-		result +=200
+		result +=50
 	}
 	//Seek healing terrain
 	var closest_hospital = instance_nearest(point_x, point_y , obj_terrain_hospital)

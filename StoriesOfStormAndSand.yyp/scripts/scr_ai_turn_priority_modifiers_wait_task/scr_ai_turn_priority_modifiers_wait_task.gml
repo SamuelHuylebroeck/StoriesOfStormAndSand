@@ -16,10 +16,10 @@ function scr_ai_turn_priority_modifiers_wait_task(task, target_flag_object){
 	
 		}
 		if(object_is_ancestor(task.executor.occupied_terrain.object_index, obj_abstract_flag)){
-			result += 1000
+			result += 1600
 			if(object_is_ancestor(task.executor.occupied_terrain.object_index, target_flag_object)){
 				//Put waiting on enemy flags higher than moving into new ones
-				result +=1000
+				result +=400
 			}
 		}
 	}

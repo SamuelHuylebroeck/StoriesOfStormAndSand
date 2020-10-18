@@ -9,6 +9,12 @@ function scr_execute_task(task){
 				scr_start_move_task()
 			}
 			break;
+		case obj_move_to_flag_task:
+			show_debug_message("Move to flag")
+			with(task){
+				scr_start_move_task()
+			}
+			break;
 		case obj_move_and_attack_task:
 			show_debug_message("Move and Attack")
 			with(task){
@@ -29,6 +35,7 @@ function scr_execute_task(task){
 			break;
 		default:
 			show_debug_message("Task execution failed, task did not match a known type")
+			executing_task = false
 			break;
 	}
 }

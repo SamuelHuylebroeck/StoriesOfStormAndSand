@@ -28,13 +28,13 @@ function generate_move_closer_tasks(executor,target_flag_object, queue){
 		var center_target = scr_get_center_of_occupied_cell(self)
 		if(occupying_unit == noone){
 			show_debug_message("Attempting to generate movement task for empty flag")
-			generate_single_move_task(executor, center_executor[0], center_executor[1], center_target[0], center_target[1], target_flag_object, queue)
+			generate_single_move_task(executor, center_executor[0], center_executor[1], center_target[0], center_target[1], target_flag_object, queue, obj_move_to_flag_task, false)
 		}else if (!object_is_ancestor(occupying_unit.object_index, executor_parent)){
 			var path_found = false
 			var limit = 5;
 			var reach = 1
 			show_debug_message("Attempting to generate movement task for enemy occupied flag")
-			while(!path_found || reach <= limit){
+			while(!path_found and reach <= limit){
 				path_found = generate_surround_move_tasks(executor, center_executor[0], center_executor[1], center_target[0], center_target[1], reach,target_flag_object, queue)
 				reach++
 			}
@@ -43,6 +43,7 @@ function generate_move_closer_tasks(executor,target_flag_object, queue){
 }
 
 function generate_surround_move_tasks(executor, source_x, source_y,target_x, target_y, reach, flag_object, queue){
+	
 	var path_found = false
 	//Generate move tasks around the flag
 	for (var i = -reach; i <=reach; i++){
@@ -50,7 +51,7 @@ function generate_surround_move_tasks(executor, source_x, source_y,target_x, tar
 			if(i != 0 and j != 0){
 				var new_target_x = target_x + i * global.grid_cell_width
 				var new_target_y = target_y + j * global.grid_cell_height
-				var found = generate_single_move_task(executor, source_x, source_y, new_target_x, new_target_y,flag_object, queue)
+				var found = generate_single_move_task(executor, source_x, source_y, new_target_x, new_target_y,flag_object, queue, obj_move_to_flag_task,false)
 				path_found = path_found || found
 			}					
 		}
@@ -58,7 +59,7 @@ function generate_surround_move_tasks(executor, source_x, source_y,target_x, tar
 	return path_found
 }
 
-function generate_single_move_task(executor, source_x, source_y, target_x, target_y,flag_object, queue){
+function generate_single_move_task(executor, source_x, source_y, target_x, target_y,flag_object, queue,task_type, only_when_in_range){
 		// Check if [x, y] is pathable and if yes, create a move task for it
 		mp_grid_clear_all(global.map_grid);
 		scr_add_impassible_tiles_to_grid(executor);
@@ -68,38 +69,46 @@ function generate_single_move_task(executor, source_x, source_y, target_x, targe
 		if (path_found){
 			//Calculate priority based on the total path length
 			var priority = scr_ai_turn_priority_move_task_base(path)
+			var	move_task = instance_create_layer(0,0,"Logic",task_type)
+			move_task.executor = executor
+			move_task.controller = global.ai_turn_controller;
+			move_task.path = path;
+			// Calculate the priority of the move task
+			move_task.priority = priority  * global.ai_primary_priority_scalar
+			move_task.priority_modifier += scr_ai_turn_priority_modifiers_move_task(move_task, flag_object)
+			
 			//Check if path length is within unit speed, and if not, snip until it matches units speed
 			if(path_get_length(path) > executor.stats_move_points_sqr * global.grid_cell_width){
-				//show_debug_message("Path length calculated was longer than the units speed")
+				show_debug_message("Path length calculated was longer than the units speed")
+				if(only_when_in_range){
+					return false
+				}
 				//show_debug_message("Unit speed: " + string(executor.stats_move_points_sqr))
 				//show_debug_message("Path length in grid cells: " + string(path_get_length(path)))
 				//Create a subpath out of the path
+				
 				var snip_length = floor(path_get_length(path)/global.grid_cell_width) - executor.stats_move_points_sqr
+				show_debug_message(string(snip_length))
 				for (var v=0; v<snip_length; v++){
 					path_delete_point(path, path_get_number(path)-1)
 				}
-				//show_debug_message("New path length in grid cells: "+ string(path_get_length(path)))
+				show_debug_message("New path length in grid cells: "+ string(path_get_length(path)/global.grid_cell_width))
 			}
 			//Check if path ends at a friendly units position and snip until it doesn't
 			var end_x = path_get_point_x(path, path_get_number(path) - 1)
 			var end_y = path_get_point_y(path, path_get_number(path) - 1)
 			var friendly_occupying_end=position_meeting(end_x, end_y, scr_get_active_side_par())
 			while(friendly_occupying_end){
-				show_debug_message("Snipping last point because a friendly is on it")
+				//show_debug_message("Snipping last point because a friendly is on it")
 				path_delete_point(path, path_get_number(path)-1)
 				end_x = path_get_point_x(path, path_get_number(path) - 1)
 				end_y = path_get_point_y(path, path_get_number(path) - 1)
 				friendly_occupying_end=position_meeting(end_x, end_y, scr_get_active_side_par())
 			}
-			
-			show_debug_message("Generating Move Task")
-			// Calculate the priority of the move task
-			var	move_task = instance_create_layer(0,0,"Logic",obj_move_task)
-			move_task.executor = executor
 			move_task.path = path;
-			move_task.controller = global.ai_turn_controller;
-			move_task.priority = priority  * global.ai_primary_priority_scalar
+			//After snipping, add some additional priority
 			move_task.priority_modifier += scr_ai_turn_priority_modifiers_move_task(move_task, flag_object)
+			show_debug_message("Generating Move Task")
 			show_debug_message(string(move_task) + " priority: " + string(move_task.priority))
 			show_debug_message(string(move_task) + " priority modifier: " + string(move_task.priority_modifier))
 			ds_priority_add(queue, move_task, move_task.priority + move_task.priority_modifier)
@@ -199,7 +208,7 @@ function generate_move_to_heal_tasks(executor, target_flag_object, queue){
 	var center_executor = scr_get_center_of_occupied_cell(executor);
 	with(obj_terrain_hospital){
 		var center_target = scr_get_center_of_occupied_cell(self)
-		generate_single_move_task(executor, center_executor[0], center_executor[1], center_target[0], center_target[1], target_flag_object, queue)
+		generate_single_move_task(executor, center_executor[0], center_executor[1], center_target[0], center_target[1], target_flag_object, queue, obj_move_task, true)
 	}	
 }
 

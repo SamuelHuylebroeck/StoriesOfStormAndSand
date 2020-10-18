@@ -14,7 +14,7 @@ function scr_ai_turn_get_healing_modifiers(relative_health){
 		//Between 50% and 80%
 		result += 150
 	}else {
-		result += 100
+		result += 0
 	}
 	return result 
 }
