@@ -10,8 +10,14 @@ function scr_state_ai_turn(){
 		with(global.ai_turn_controller){
 			scr_ai_turn_initialize_controller()
 		}
-		with(obj_next_turn_button){
-			visible=false
+		
+		with(obj_control)
+		{
+			scr_hide_gui_elements();
+		}
+		
+		with(obj_quit_button){
+			visible=true
 		}
 	}
 	if (global.ai_turn_completed==true){
@@ -21,8 +27,10 @@ function scr_state_ai_turn(){
 		instance_destroy(global.ai_turn_controller)
 		global.ai_turn_controller = noone
 		scr_next_turn()
-		with(obj_next_turn_button){
-			visible=true
+		with(obj_control)
+		{
+			scr_show_gui_elements();
 		}
+		
 	}
 }

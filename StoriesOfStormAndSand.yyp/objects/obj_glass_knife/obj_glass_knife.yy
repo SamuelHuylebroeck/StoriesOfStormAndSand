@@ -1,0 +1,41 @@
+{
+  "spriteId": {
+    "name": "spr_map_idle_bandana_green_placeholder",
+    "path": "sprites/spr_map_idle_bandana_green_placeholder/spr_map_idle_bandana_green_placeholder.yy",
+  },
+  "solid": false,
+  "visible": true,
+  "spriteMaskId": null,
+  "persistent": false,
+  "parentObjectId": {
+    "name": "par_sand_alliance",
+    "path": "objects/par_sand_alliance/par_sand_alliance.yy",
+  },
+  "physicsObject": false,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsGroup": 0,
+  "physicsDensity": 0.5,
+  "physicsRestitution": 0.1,
+  "physicsLinearDamping": 0.1,
+  "physicsAngularDamping": 0.1,
+  "physicsFriction": 0.2,
+  "physicsStartAwake": true,
+  "physicsKinematic": false,
+  "physicsShapePoints": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_glass_knife","path":"objects/obj_glass_knife/obj_glass_knife.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
+  "properties": [
+    {"varType":1,"value":"80","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"stats_current_hp","tags":[],"resourceType":"GMObjectProperty",},
+  ],
+  "overriddenProperties": [],
+  "parent": {
+    "name": "Sand Alliance",
+    "path": "folders/Objects/units/Sand Alliance.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "obj_glass_knife",
+  "tags": [],
+  "resourceType": "GMObject",
+}

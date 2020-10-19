@@ -1,7 +1,9 @@
 function scr_attack_finish_sequence() {
 	with(obj_control)
 	{
-		scr_show_gui_elements();
+		if(!global.ai_turn_in_progress){
+			scr_show_gui_elements();
+		}
 	}
 	if (global.ai_turn_in_progress != true){
 		global.selected.has_acted_this_round = true;

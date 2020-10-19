@@ -1,6 +1,9 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_check_for_game_end(){
+	if(!global.game_in_progress){
+		return true
+	}
 	var storm_house_victory = false
 	var sand_alliance_victory = false
 	var draw = false

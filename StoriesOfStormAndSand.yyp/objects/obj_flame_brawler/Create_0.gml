@@ -51,11 +51,11 @@ is_moving = false;
 occupied_terrain = noone;
 
 //Sprites and animation
-spr_portrait = spr_bolt_knight_portrait;
+spr_portrait = spr_portrait_red_placeholder;
 animations[unit_animation_fields.defender] = spr_bolt_knight_defender_placehoder;
 animations[unit_animation_fields.death_attacker] = spr_bolt_knight_death_attacker;
 animations[unit_animation_fields.death_defender] = spr_bolt_knight_death_defender;
-animations[unit_animation_fields.idle] = spr_map_idle_placeholder;
+animations[unit_animation_fields.idle] = spr_map_idle_bandana_red_placeholder;
 animations[unit_animation_fields.move_ltr] = spr_walk_ltr_placeholder;
 animations[unit_animation_fields.move_rtl] = spr_walk_rtl_placeholder;
 animations[unit_animation_fields.move_ttb] = spr_walk_ttb_placeholder;
