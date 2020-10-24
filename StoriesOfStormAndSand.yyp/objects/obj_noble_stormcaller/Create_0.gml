@@ -8,10 +8,10 @@ stats_max_hp = 60;
 stats_type = combat_type.brutal;
 stats_armor_normal = 5;
 stats_armor_weak = 2;
-stats_evade_normal = 15;
-stats_evade_weak = 0;
-stats_spike_normal  = 10;
-stats_spike_weak = 5;
+stats_evade_normal = 20;
+stats_evade_weak = 10;
+stats_spike_normal  = 15;
+stats_spike_weak = 11;
 
 //Attack stats
 ds_attack_list = ds_list_create();
@@ -20,10 +20,10 @@ attack_one[attack_fields.name] = "Windhammer"
 attack_one[attack_fields.range_min] = 3 ;
 attack_one[attack_fields.range_max] = 5;
 attack_one[attack_fields.type] = combat_type.brutal;
-attack_one[attack_fields.strength_weak] = 20 ;
+attack_one[attack_fields.strength_weak] = 35 ;
 attack_one[attack_fields.strength_normal] = 50;
 attack_one[attack_fields.hit_normal] = 90;
-attack_one[attack_fields.hit_weak] = 40;
+attack_one[attack_fields.hit_weak] = 72;
 attack_one[attack_fields.animation] = spr_wave_knight_attack_glacier_slash_placeholder;
 attack_one[attack_fields.animation_hit_frame] = 9;
 ds_list_add(ds_attack_list,attack_one);
@@ -32,10 +32,10 @@ attack_two[attack_fields.name] = "Lightning Curtain"
 attack_two[attack_fields.range_min] = 1;
 attack_two[attack_fields.range_max] = 1;
 attack_two[attack_fields.type] = combat_type.stalwart;
-attack_two[attack_fields.strength_weak] = 10;
-attack_two[attack_fields.strength_normal] = 30;
-attack_two[attack_fields.hit_normal] = 100;
-attack_two[attack_fields.hit_weak] = 70;
+attack_two[attack_fields.strength_weak] = 28;
+attack_two[attack_fields.strength_normal] = 40;
+attack_two[attack_fields.hit_normal] = 120;
+attack_two[attack_fields.hit_weak] = 96;
 attack_two[attack_fields.animation] = spr_bolt_knight_attack_blast_placeholder;
 attack_two[attack_fields.animation_hit_frame] = 14;
 ds_list_add(ds_attack_list,attack_two);

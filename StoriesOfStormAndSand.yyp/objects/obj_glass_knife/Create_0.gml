@@ -4,38 +4,38 @@
 //Configurable stats
 stats_name = "Glass Knife";
 stats_move_points_sqr  = 6;
-stats_max_hp = 80;
+stats_max_hp = 60;
 stats_type = combat_type.swift;
-stats_armor_normal = 7;
-stats_armor_weak = 5;
-stats_evade_normal = 35;
-stats_evade_weak = 10;
-stats_spike_normal  = 5;
-stats_spike_weak = 2;
+stats_armor_normal = 12;
+stats_armor_weak = 4;
+stats_evade_normal = 50;
+stats_evade_weak = 25;
+stats_spike_normal  = 15;
+stats_spike_weak = 11;
 
 //Attack stats
 ds_attack_list = ds_list_create();
 //Attack one
 attack_one[attack_fields.name] = "Glass Darts"
 attack_one[attack_fields.range_min] = 1 ;
-attack_one[attack_fields.range_max] = 1;
+attack_one[attack_fields.range_max] = 2;
 attack_one[attack_fields.type] = combat_type.swift;
-attack_one[attack_fields.strength_weak] = 15;
-attack_one[attack_fields.strength_normal] = 30;
-attack_one[attack_fields.hit_normal] = 110;
-attack_one[attack_fields.hit_weak] = 90;
+attack_one[attack_fields.strength_weak] = 44;
+attack_one[attack_fields.strength_normal] = 15;
+attack_one[attack_fields.hit_normal] = 115;
+attack_one[attack_fields.hit_weak] = 92;
 attack_one[attack_fields.animation] = spr_flame_brawler_attack_blazing_rush_placeholder;
 attack_one[attack_fields.animation_hit_frame] = 12;
 ds_list_add(ds_attack_list,attack_one);
 //Attack two
 attack_two[attack_fields.name] = "Glass Spike"
 attack_two[attack_fields.range_min] = 2;
-attack_two[attack_fields.range_max] = 3;
+attack_two[attack_fields.range_max] = 2;
 attack_two[attack_fields.type] = combat_type.brutal;
-attack_two[attack_fields.strength_weak] = 40;
-attack_two[attack_fields.strength_normal] = 50;
-attack_two[attack_fields.hit_normal] = 90;
-attack_two[attack_fields.hit_weak] = 60;
+attack_two[attack_fields.strength_weak] = 28;
+attack_two[attack_fields.strength_normal] = 40;
+attack_two[attack_fields.hit_normal] = 100;
+attack_two[attack_fields.hit_weak] = 80;
 attack_two[attack_fields.animation] = spr_flame_brawler_attack_heat_javelin_placeholder;
 attack_two[attack_fields.animation_hit_frame] = 14;
 ds_list_add(ds_attack_list,attack_two);

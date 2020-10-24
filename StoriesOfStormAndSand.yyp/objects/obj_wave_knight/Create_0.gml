@@ -4,14 +4,14 @@
 //Configurable stats
 stats_name = "Wave Knight";
 stats_move_points_sqr  = 5;
-stats_max_hp = 120;
+stats_max_hp = 160;
 stats_type = combat_type.stalwart;
 stats_armor_normal = 20;
-stats_armor_weak = 10;
-stats_evade_normal = 15;
-stats_evade_weak = 0;
-stats_spike_normal  = 20;
-stats_spike_weak = 10;
+stats_armor_weak = 7;
+stats_evade_normal = 10;
+stats_evade_weak = 5;
+stats_spike_normal  = 7;
+stats_spike_weak = 5;
 
 //Attack stats
 ds_attack_list = ds_list_create();
@@ -20,10 +20,10 @@ attack_one[attack_fields.name] = "Glacier Slash"
 attack_one[attack_fields.range_min] = 1 ;
 attack_one[attack_fields.range_max] = 2;
 attack_one[attack_fields.type] = combat_type.stalwart;
-attack_one[attack_fields.strength_weak] = 20 ;
-attack_one[attack_fields.strength_normal] = 30;
-attack_one[attack_fields.hit_normal] = 100;
-attack_one[attack_fields.hit_weak] = 60;
+attack_one[attack_fields.strength_weak] = 25 ;
+attack_one[attack_fields.strength_normal] = 35;
+attack_one[attack_fields.hit_normal] = 95;
+attack_one[attack_fields.hit_weak] = 76;
 attack_one[attack_fields.animation] = spr_wave_knight_attack_glacier_slash_placeholder;
 attack_one[attack_fields.animation_hit_frame] = 9;
 ds_list_add(ds_attack_list,attack_one);
@@ -32,10 +32,10 @@ attack_two[attack_fields.name] = "Rip Current"
 attack_two[attack_fields.range_min] = 1;
 attack_two[attack_fields.range_max] = 1;
 attack_two[attack_fields.type] = combat_type.swift;
-attack_two[attack_fields.strength_weak] = 10;
-attack_two[attack_fields.strength_normal] = 15;
-attack_two[attack_fields.hit_normal] = 110;
-attack_two[attack_fields.hit_weak] = 100;
+attack_two[attack_fields.strength_weak] = 14;
+attack_two[attack_fields.strength_normal] = 20;
+attack_two[attack_fields.hit_normal] = 120;
+attack_two[attack_fields.hit_weak] = 96;
 attack_two[attack_fields.animation] = spr_bolt_knight_attack_blast_placeholder;
 attack_two[attack_fields.animation_hit_frame] = 14;
 ds_list_add(ds_attack_list,attack_two);
